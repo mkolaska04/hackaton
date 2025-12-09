@@ -21,11 +21,13 @@ export default function Home() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+ 
+
   return (
     <div className="flex flex-col min-h-screen items-center justify-center font-sans ">
 
 
-      <div style={{ width: '100%', height: windowHeight || '100vh', position: 'relative', backgroundColor: 'var(--color-surface)' }}>
+      <div style={{ width: '100%', height: windowHeight || '100vh', position: 'relative', backgroundColor: 'var(--color-background)' }}>
         <LiquidEther
           colors={['#5227FF', '#FF9FFC', '#B19EEF']}
           mouseForce={20}
@@ -38,16 +40,16 @@ export default function Home() {
           isBounce={false}
           autoDemo={true}
           autoSpeed={0.3}
-          autoIntensity={2.2}
+          autoIntensity={3.2}
           takeoverDuration={0.25}
-          autoResumeDelay={3000}
+          autoResumeDelay={1000}
           autoRampDuration={0.5}
           dt={0.014}
           BFECC={true}
 
         />
         <section className="flex flex-col justify-center w-fit absolute bottom-8 left-8 lg:bottom-12 lg:left-12">
-          <h1 className="text-5xl font-grotesk font-bold">Idea2Impact</h1>
+          <h1 className="text-5xl font-grotesk font-bold">Idea2Impact <span className="text-secondary animate-blink" id="cursor">|</span></h1>
           <p className="text-2xl font-grotesk">Hackathon 2025</p>
         </section>
         <div className="flex flex-col w-fit absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" >
@@ -69,13 +71,18 @@ export default function Home() {
             forceHoverState={false}
           />
         </div>
-         <div className="flex flex-col w-3/5 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" >
-          <h1 className="text-4xl font-bold text-white mb-4 mt-10 flex justify-center">
+         
+          <section className="flex flex-col justify-center w-fit absolute bottom-8 left-8 lg:bottom-12 lg:left-12">
+          <h1 className="text-5xl font-grotesk font-bold">Idea2Impact <span className="text-secondary animate-blink" id="cursor">|</span></h1>
+          <p className="text-2xl font-grotesk">Hackathon 2025</p>
+        </section>
+        <div className="flex flex-col w-fit absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" >
+          <h1 className="text-4xl font-bold text-white mb-4 mt-10 flex justify-center font-grotesk">
             Do wydarzenia zostało:
           </h1>
 
           <Timer eventDate={eventDate} />
-          <button className="mt-8 px-6 py-3 bg-white text-primary font-semibold rounded-lg hover:bg-gray-300 transition w-fit mx-auto">Zapisz się!</button>
+          <button className="mt-8 px-6 py-3 bg-white text-primary font-semibold font-inter rounded-lg hover:bg-gray-300 transition w-fit mx-auto text-2xl">Zapisz się!</button>
         </div>
       </div> */}
 

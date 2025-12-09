@@ -15,7 +15,7 @@ export default function Navigation() {
                 <div className="hidden md:flex">
                     <a href="#" className="text-white mx-2 text-xl hover:text-secondary font-code">O Wydarzeniu</a>
                     <a href="#" className="text-white mx-2 text-xl hover:text-secondary font-code">Organizatorzy</a>
-                    <a href="#" className="text-white mx-2 text-xl hover:text-secondary font-code">Zapisy</a>
+                    {/* <a href="#" className="text-white mx-2 text-xl hover:text-secondary font-code">Zapisy</a> */}
                     <a href="#" className="text-white mx-2 text-xl hover:text-secondary font-code">Regulamin</a>
                 </div>
                 <div className="md:hidden flex items-center">
@@ -24,7 +24,7 @@ export default function Navigation() {
                     <div className={`absolute top-16 right-0 bg-background/80 shadow-lg rounded-md p-4 flex flex-col ${isDrawerOpen ? 'block' : 'hidden'}`}>
                         <a href="#" className="text-white mx-2 text-xl my-2 hover:text-secondary">O Wydarzeniu</a>
                         <a href="#" className="text-white mx-2 text-xl my-2 hover:text-secondary font-code">Organizatorzy</a>
-                        <a href="#" className="text-white mx-2 text-xl my-2 hover:text-secondary font-code">Zapisy</a>
+                        {/* <a href="#" className="text-white mx-2 text-xl my-2 hover:text-secondary font-code">Zapisy</a> */}
                         <a href="#" className="text-white mx-2 text-xl my-2 hover:text-secondary font-code">Regulamin</a>
                     </div>
                 </div>

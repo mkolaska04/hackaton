@@ -15,7 +15,7 @@
   --color-secondary: #FF9FFC;
   --color-tertiary: #B19EEF;
   /* --color-accent: #B19EEF; */
-  --color-surface: #0F0109;
+  --color-surface: #1B0110;
   
   /* Additional custom fonts */
   --font-grotesk: var(--font-space-grotesk);
@@ -24,6 +24,19 @@
 
 }
 
+/* VS Code style cursor blink animation */
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  50.01%, 100% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
 
 body {
   background: var(--background);

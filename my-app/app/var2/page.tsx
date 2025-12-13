@@ -29,7 +29,7 @@ export default function Home() {
 
 
      
-      <div className="w-full flex items-center justify-center">
+      <div className="w-full flex items-center justify-center bg-surface">
         <div style={{ width: '60%', height: windowHeight || '100vh', position: 'relative' }}>
           <Orb
             hoverIntensity={0.5}

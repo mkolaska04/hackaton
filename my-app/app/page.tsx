@@ -27,7 +27,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen items-center justify-center font-sans ">
 
 
-      <div style={{ width: '100%', height: windowHeight || '100vh', position: 'relative', backgroundColor: 'var(--color-background)' }}>
+      <div style={{ width: '100%', height: windowHeight || '100vh', position: 'relative', backgroundColor: 'var(--color-surface)' }}>
         <LiquidEther
           colors={['#5227FF', '#FF9FFC', '#B19EEF']}
           mouseForce={20}
@@ -77,10 +77,19 @@ export default function Home() {
             Iste reiciendis saepe quasi corporis atque sapiente quia vitae soluta a natus asperiores maxime modi mollitia recusandae ratione explicabo laborum vel facilis molestiae sequi porro minus, at fugit. Excepturi, ea.
             Dicta recusandae officiis officia distinctio vero tempora praesentium mollitia, perferendis assumenda, <span className='text-secondary'>voluptate </span> rem rerum a nihil, nulla accusantium. Consequatur itaque incidunt eveniet atque fugit, facere reiciendis deleniti quam alias libero?
           </div>
+          <div className='flex justify-center text-white mt-4 text-center'>
+            <div className='border-r-4 border-secondary inline p-2 text-2xl font-semibold'>
+              12 zespołów
+            </div>
+             <div className='inline p-2 text-2xl font-semibold'>
+              24h programowania
+            </div>
+          
+          </div>
         </section>
         <Divider />
         <h2 className='text-3xl font-semibold  text-center'>&lt;-- Lokalizacja wydarzenia --&gt;</h2>
-        <section className="w-full lg:w-3/5 mx-auto p-8">
+        <section className="w-full lg:w-3/5 mx-auto p-8 border-surface border-2 rounded-lg shadow-lg">
           <div className="w-full h-[450px] rounded-lg overflow-hidden shadow-lg">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1022.348695312378!2d18.572401673396413!3d54.396282890011996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd752655cecc63%3A0x5dc2caea70bb6d84!2sInstytut%20Informatyki%20UG!5e0!3m2!1spl!2spl!4v1765209333072!5m2!1spl!2spl"
               width="100%"
@@ -95,7 +104,7 @@ export default function Home() {
             <p className="text-lg font-semibold mb-2">Uniwersytet Gdański, Wydział Matematyki, Fizyki i Informatyki</p>
             <p className="text-gray-600">Wita Stwosza 57, 80-952 Gdańsk</p>
           </div>
-
+        
         </section>
         <Divider />
         <h2 className='text-3xl font-semibold  text-center'>&lt;-- Organizatorzy --&gt;</h2>

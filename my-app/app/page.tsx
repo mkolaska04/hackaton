@@ -2,9 +2,10 @@
 
 import { useEffect, useState } from 'react';
 import LiquidEther from './components/LiquidEther';
-import Orb from './components/Orb';
 import Timer from './components/Timer';
 import Divider from './components/Divider';
+import AnimatedContent from './components/AnimatedContent';
+import FadeContent from './components/FadeContent';
 
 export default function Home() {
   const [windowHeight, setWindowHeight] = useState<number | string>('100vh');
@@ -21,7 +22,7 @@ export default function Home() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
- 
+
 
   return (
     <div className="flex flex-col min-h-screen items-center justify-center font-sans ">
@@ -66,29 +67,59 @@ export default function Home() {
         <Divider />
         <h2 className='text-3xl font-semibold text-center'>&lt;-- O wydarzeniu --&gt;</h2>
         <section className=" max-w-7xl p-8 flex  gap-8 flex-col justify-between items-between w-full min-h-[600px] w-full lg:w-3/5 mx-auto" >
-          <div className='max-w-2xl self-start text-lg'>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo culpa, sunt corrupti voluptatum optio totam non dicta deserunt debitis asperiores sit? Sequi earum doloremque vitae eum obcaecati hic debitis distinctio.
-            Iure animi illo veniam quod autem tenetur ut vel eum? Molestiae hic, nemo error similique perferendis veritatis alias ad eaque porro est assumenda expedita eius! Autem vel expedita modi officia.
-            Atque, inventore, eaque est animi iusto corporis non tempora veritatis obcaecati <span className='text-secondary'>24h </span>nihil minus culpa ex quam aperiam fugit in sunt voluptas architecto. Impedit ipsam porro asperiores quidem ratione assumenda reiciendis.
-            Excepturi alias et nostrum quibusdam laborum, optio nam eveniet harum numquam tempore veritatis mollitia dolorum vel quisquam eius debitis commodi a facere atque asperiores nobis. Enim fugit animi sed quas.
-          </div>
-          <div className='max-w-2xl self-end text-lg'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni rem porro officia exercitationem delectus nemo ab illo, assumenda iste molestiae blanditiis minima pariatur veritatis dolorum voluptates odit corrupti quos voluptatum.
-            Iste reiciendis saepe quasi corporis atque sapiente quia vitae soluta a natus asperiores maxime modi mollitia recusandae ratione explicabo laborum vel facilis molestiae sequi porro minus, at fugit. Excepturi, ea.
-            Dicta recusandae officiis officia distinctio vero tempora praesentium mollitia, perferendis assumenda, <span className='text-secondary'>voluptate </span> rem rerum a nihil, nulla accusantium. Consequatur itaque incidunt eveniet atque fugit, facere reiciendis deleniti quam alias libero?
-          </div>
+
+
+          <AnimatedContent
+            distance={150}
+            direction="horizontal"
+            reverse={false}
+            duration={1.2}
+            ease="power3.out"
+            initialOpacity={0.2}
+            animateOpacity
+            scale={1.1}
+            threshold={0.2}
+            delay={0.3}
+          >
+            <div className='max-w-2xl self-start text-lg'>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo culpa, sunt corrupti voluptatum optio totam non dicta deserunt debitis asperiores sit? Sequi earum doloremque vitae eum obcaecati hic debitis distinctio.
+              Iure animi illo veniam quod autem tenetur ut vel eum? Molestiae hic, nemo error similique perferendis veritatis alias ad eaque porro est assumenda expedita eius! Autem vel expedita modi officia.
+              Atque, inventore, eaque est animi iusto corporis non tempora veritatis obcaecati <span className='text-secondary'>24h </span>nihil minus culpa ex quam aperiam fugit in sunt voluptas architecto. Impedit ipsam porro asperiores quidem ratione assumenda reiciendis.
+              Excepturi alias et nostrum quibusdam laborum, optio nam eveniet harum numquam tempore veritatis mollitia dolorum vel quisquam eius debitis commodi a facere atque asperiores nobis. Enim fugit animi sed quas.
+            </div>
+          </AnimatedContent>
+          <AnimatedContent
+            distance={150}
+            direction="horizontal"
+            reverse={false}
+            duration={1.2}
+            ease="power3.out"
+            initialOpacity={0.2}
+            animateOpacity
+            scale={1.1}
+            threshold={0.2}
+            delay={0.3}
+            className="self-end"
+          >
+            <div className='max-w-2xl text-lg'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni rem porro officia exercitationem delectus nemo ab illo, assumenda iste molestiae blanditiis minima pariatur veritatis dolorum voluptates odit corrupti quos voluptatum.
+              Iste reiciendis saepe quasi corporis atque sapiente quia vitae soluta a natus asperiores maxime modi mollitia recusandae ratione explicabo laborum vel facilis molestiae sequi porro minus, at fugit. Excepturi, ea.
+              Dicta recusandae officiis officia distinctio vero tempora praesentium mollitia, perferendis assumenda, <span className='text-secondary'>voluptate </span> rem rerum a nihil, nulla accusantium. Consequatur itaque incidunt eveniet atque fugit, facere reiciendis deleniti quam alias libero?
+            </div>
+          </AnimatedContent >
           <div className='flex justify-center text-white mt-4 text-center'>
             <div className='border-r-4 border-secondary inline p-2 text-2xl font-semibold'>
               12 zespołów
             </div>
-             <div className='inline p-2 text-2xl font-semibold'>
+            <div className='inline p-2 text-2xl font-semibold'>
               24h programowania
             </div>
-          
+
           </div>
         </section>
         <Divider />
         <h2 className='text-3xl font-semibold  text-center'>&lt;-- Lokalizacja wydarzenia --&gt;</h2>
+        <FadeContent blur={true} duration={1000} initialOpacity={0}>
         <section className="w-full lg:w-3/5 mx-auto p-8 border-surface border-2 rounded-lg shadow-lg">
           <div className="w-full h-[450px] rounded-lg overflow-hidden shadow-lg">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1022.348695312378!2d18.572401673396413!3d54.396282890011996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd752655cecc63%3A0x5dc2caea70bb6d84!2sInstytut%20Informatyki%20UG!5e0!3m2!1spl!2spl!4v1765209333072!5m2!1spl!2spl"
@@ -104,8 +135,9 @@ export default function Home() {
             <p className="text-lg font-semibold mb-2">Uniwersytet Gdański, Wydział Matematyki, Fizyki i Informatyki</p>
             <p className="text-gray-600">Wita Stwosza 57, 80-952 Gdańsk</p>
           </div>
-        
+
         </section>
+</FadeContent>
         <Divider />
         <h2 className='text-3xl font-semibold  text-center'>&lt;-- Organizatorzy --&gt;</h2>
         <section className="w-full lg:w-3/5 mx-auto">

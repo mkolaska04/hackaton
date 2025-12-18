@@ -9,11 +9,16 @@ import FadeContent from './components/FadeContent';
 
 export default function Home() {
   const [windowHeight, setWindowHeight] = useState<number | string>('100vh');
+  const [lowPerf, setLowPerf] = useState(false);
   const eventDate = new Date('2025-12-31T10:00:00');
 
   useEffect(() => {
     const handleResize = () => {
       setWindowHeight(window.innerHeight);
+      const area = window.innerWidth * window.innerHeight;
+      const dpr = window.devicePixelRatio || 1;
+      // Treat typical laptop screens (1080p and similar) as lower performance for this effect
+      setLowPerf(area >= 1_600_000 || dpr > 1.5);
     };
 
     handleResize();
@@ -31,23 +36,22 @@ export default function Home() {
       <div style={{ width: '100%', height: windowHeight || '100vh', position: 'relative', backgroundColor: 'var(--color-surface)' }}>
         <LiquidEther
           colors={['#5227FF', '#FF9FFC', '#B19EEF']}
-          mouseForce={20}
-          cursorSize={100}
-          isViscous={true}
+          mouseForce={lowPerf ? 16 : 20}
+          cursorSize={lowPerf ? 90 : 100}
+          isViscous={lowPerf ? false : true}
           viscous={30}
-          iterationsViscous={32}
-          iterationsPoisson={32}
-          resolution={0.5}
+          iterationsViscous={lowPerf ? 8 : 24}
+          iterationsPoisson={lowPerf ? 16 : 28}
+          resolution={lowPerf ? 0.35 : 0.5}
           isBounce={false}
           autoDemo={true}
-          autoSpeed={0.3}
-          autoIntensity={3.2}
+          autoSpeed={lowPerf ? 0.25 : 0.3}
+          autoIntensity={lowPerf ? 2.2 : 3.2}
           takeoverDuration={0.25}
           autoResumeDelay={1000}
           autoRampDuration={0.5}
           dt={0.014}
           BFECC={true}
-
         />
         <section className="flex flex-col justify-center w-fit absolute bottom-8 left-8 lg:bottom-12 lg:left-12">
           <h1 className="text-5xl font-grotesk font-bold">Idea2Impact <span className="text-secondary animate-blink" id="cursor">|</span></h1>

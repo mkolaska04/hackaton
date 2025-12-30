@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #030113 ;
+  --background: #0d0d0d ;
   --foreground: #ededed;
 }
 
@@ -16,6 +16,7 @@
   --color-tertiary: #B19EEF;
   /* --color-accent: #B19EEF; */
   --color-surface: #0a0a0a;
+  --color-outline: #2d2b3c;
   
   /* Additional custom fonts */
   --font-grotesk: var(--font-space-grotesk);

@@ -30,13 +30,9 @@ export default function Home() {
   const formUrl =
     "https://docs.google.com/forms/d/e/1FAIpQLScCTLeXWdAGKHNl0AYy7nWMa6E9Syt_DUJN2kPy_9hn0nZ3fQ/viewform?usp=sharing&ouid=110319299113867414103";
 
-  const handleRegistrationClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    const now = new Date();
-    if (now < registrationStartDate || now > registrationEndDate) {
-      e.preventDefault();
-      setIsModalOpen(true);
-    }
-  };
+  // Sprawdzamy czy jesteśmy w okresie zapisów
+  const now = new Date();
+  const isRegistrationOpen = now >= registrationStartDate && now <= registrationEndDate;
 
   useEffect(() => {
     const handleResize = () => {
@@ -101,15 +97,23 @@ export default function Home() {
           </h2>
 
           <Timer eventDate={eventDate} />
-          <Link
-            href={formUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={handleRegistrationClick}
-            className="mt-8 px-6 py-3 bg-white text-primary font-semibold font-inter rounded-lg text-2xl w-fit mx-auto shadow-md transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5 hover:shadow-lg hover:bg-gray-100"
-          >
-            Zapisz się!
-          </Link>
+          {isRegistrationOpen ? (
+            <Link
+              href={formUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 px-6 py-3 bg-white text-primary font-semibold font-inter rounded-lg text-2xl w-fit mx-auto shadow-md transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5 hover:shadow-lg hover:bg-gray-100"
+            >
+              Zapisz się!
+            </Link>
+          ) : (
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className="mt-8 px-6 py-3 bg-white text-primary font-semibold font-inter rounded-lg text-2xl w-fit mx-auto shadow-md transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5 hover:shadow-lg hover:bg-gray-100"
+            >
+              Zapisz się!
+            </button>
+          )}
         </div>
       </div>
       <Modal

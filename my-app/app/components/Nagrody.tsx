@@ -76,7 +76,7 @@ export default function Nagrody() {
             {/* Dodatkowe informacje */}
             <div className="space-y-4">
               <div className="bg-surface/50 border border-accent rounded-lg p-6">
-                <h4 className="text-lg font-semibold text-secondary mb-3">
+                <h4 className="text-lg font-semibold text-primary mb-3 flex items-center gap-2">
                   <GroupsIcon /> Dla wszystkich uczestników
                 </h4>
                 <p className="text-base">
@@ -89,7 +89,7 @@ export default function Nagrody() {
               </div>
 
               <div className="bg-surface/50 border border-accent rounded-lg p-6">
-                <h4 className="text-lg font-semibold text-tertiary mb-3">
+                <h4 className="text-lg font-semibold text-secondary mb-3 flex items-center gap-2">
                   <RedeemIcon /> Dodatkowo
                 </h4>
                 <p className="text-base">

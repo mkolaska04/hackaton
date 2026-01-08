@@ -28,7 +28,6 @@ export default function Navigation() {
   useEffect(() => {
     const hero = document.getElementById("hero-section");
     if (!hero) {
-      // Jeśli nie ma sekcji hero (np. na stronie zasad), ustaw tło
       setHeroVisible(false);
       return;
     }

@@ -6,7 +6,7 @@ export default function Organizatorzy() {
           Organizatorzy
         </h2>
         <section className="w-full px-4 lg:w-4/5 xl:w-3/5 mx-auto p-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 items-end">
             <div className="flex flex-col items-center ">
               <div className="relative w-4/5 aspect-square">
                 <Image

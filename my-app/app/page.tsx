@@ -12,9 +12,9 @@ import LocationPinIcon from "@mui/icons-material/LocationPin";
 import Organizatorzy from "./components/Organizatorzy";
 import Nagrody from "./components/Nagrody";
 import Kryteria from "./components/Kryteria";
-import GpsFixedIcon from '@mui/icons-material/GpsFixed';
-import HelpCenterIcon from '@mui/icons-material/HelpCenter';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import GpsFixedIcon from "@mui/icons-material/GpsFixed";
+import HelpCenterIcon from "@mui/icons-material/HelpCenter";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import Link from "next/link";
 import Modal from "./components/Modal";
 
@@ -23,11 +23,12 @@ export default function Home() {
   const [lowPerf, setLowPerf] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const eventDate = new Date("2026-03-06T16:00:00");
-  
+
   // Daty zapisów
   const registrationStartDate = new Date("2026-02-14T00:00:00");
   const registrationEndDate = new Date("2026-02-27T23:59:59");
-  const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLScCTLeXWdAGKHNl0AYy7nWMa6E9Syt_DUJN2kPy_9hn0nZ3fQ/viewform?usp=sharing&ouid=110319299113867414103";
+  const formUrl =
+    "https://docs.google.com/forms/d/e/1FAIpQLScCTLeXWdAGKHNl0AYy7nWMa6E9Syt_DUJN2kPy_9hn0nZ3fQ/viewform?usp=sharing&ouid=110319299113867414103";
 
   const handleRegistrationClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     const now = new Date();
@@ -63,7 +64,7 @@ export default function Home() {
         }}
       >
         <LiquidEther
-          colors={[  "#746299", "#87C4BB", "#FEDCD4 ",  "#87C4BB", "#87C4BB",  ]}
+          colors={["#746299", "#87C4BB", "#FEDCD4 ", "#87C4BB", "#87C4BB"]}
           mouseForce={lowPerf ? 16 : 20}
           cursorSize={lowPerf ? 90 : 100}
           isViscous={lowPerf ? false : true}
@@ -89,7 +90,9 @@ export default function Home() {
                 |
               </span>
             </div>
-            <span className="text-xl lg:text-2xl font-code ">Hackathon 2026</span>
+            <span className="text-xl lg:text-2xl font-code ">
+              Hackathon 2026
+            </span>
           </h1>
         </section>
         <div className="flex flex-col w-fit absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -109,8 +112,8 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <Modal 
-        isOpen={isModalOpen} 
+      <Modal
+        isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         startDate="14.02.2026"
         endDate="27.02.2026"
@@ -118,7 +121,7 @@ export default function Home() {
       <main className=" w-full mt-16 mb-8 space-y-8">
         <Divider />
         <h2 className="text-4xl font-semibold text-center text-primary font-code">
-           O wydarzeniu 
+          O wydarzeniu
         </h2>
         <section className=" max-w-7xl p-8 flex  gap-8 flex-col justify-between items-between  w-full lg:w-3/5 mx-auto">
           <AnimatedContent
@@ -134,13 +137,20 @@ export default function Home() {
             delay={0.3}
           >
             <div className="max-w-2xl self-start text-lg">
-              <p className="text-secondary text-2xl "><HelpCenterIcon /> O co chodzi?</p>
-              Hackathon Idea2Impact to społeczne wydarzenie, którego celem jest
-              zebranie studentów z różnych dyscyplin, aby współpracowali nad
-              rozwiązaniami realnych wyzwań. Wyzwania te są zgłaszane przez
-              fundacje, stowarzyszenia i inne organizacje działające na rzecz
-              obszarów ważnych dla społeczeństwa.
-              <p className="text-secondary "><CalendarMonthIcon /> Kiedy? 6-7 marca</p>
+              <p className="text-secondary text-xl lg:text-2xl mb-2 items-center flex font-semibold gap-2">
+                <HelpCenterIcon /> O co chodzi?
+              </p>
+              <p>
+                Hackathon Idea2Impact to społeczne wydarzenie, którego celem
+                jest zebranie studentów z różnych dyscyplin, aby współpracowali
+                nad rozwiązaniami realnych wyzwań. Wyzwania te są zgłaszane
+                przez fundacje, stowarzyszenia i inne organizacje działające na
+                rzecz obszarów ważnych dla społeczeństwa.
+              </p>
+
+              <p className="text-secondary text-xl lg:text-2xl my-2 flex items-center gap-2">
+                <CalendarMonthIcon /> Kiedy? 6-7 marca
+              </p>
             </div>
           </AnimatedContent>
           <AnimatedContent
@@ -157,7 +167,9 @@ export default function Home() {
             className="self-end"
           >
             <div className="max-w-2xl text-lg">
-              <p className="text-secondary text-2xl "><GpsFixedIcon /> Cel projektu</p>
+              <p className="text-secondary text-xl lg:text-2xl mb-2 flex items-center gap-2 font-semibold">
+                <GpsFixedIcon /> Cel projektu
+              </p>
               Uczestnicy mają za zadanie stworzyć w czasie Hackatonu innowacyjne
               i praktyczne rozwiązania, które mają bezpośredni wpływ na poprawę
               jakości życia oraz wspieranie organizacji w ich codziennej misji.
@@ -165,26 +177,24 @@ export default function Home() {
               rozwiązywania problemów i zwiększenie kreatywności w środowisku
               symulującym rzeczywiste opracowywanie projektów, a z drugiej
               strony wsparcie organizacji.{" "}
-              {/* <p className="text-tertiary ">
-                Czas trawania? 24 godziny non-stop
-              </p> */}
+              
             </div>
           </AnimatedContent>
-          <div className="flex justify-center text-white mt-4 text-center">
-            <div className="border-r-4 border-primary inline p-2 text-lg lg:text-2xl font-semibold">
+          <div className="flex justify-center items-center text-white mt-4 text-center mx-auto ">
+            <div className="border-r-4 border-primary inline px-3 text-lg lg:text-2xl font-semibold w-full">
               3-5 osobowe zespoły
             </div>
-            <div className="inline p-2 text-lg lg:text-2xl font-semibold">
+            <div className="inline px-3 text-lg lg:text-2xl font-semibold w-full">
               24h programowania
             </div>
           </div>
         </section>
         <Divider />
         <h2 className="text-3xl lg:text-4xl font-semibold  text-center text-primary font-code">
-           Lokalizacja wydarzenia 
+          Lokalizacja wydarzenia
         </h2>
         <FadeContent blur={true} duration={1000} initialOpacity={0}>
-          <section className="w-full lg:w-3/5 mx-auto p-8 border-accent border-2 rounded-lg shadow-lg">
+          <section className="w-full lg:w-3/5 mx-auto bg-surface p-4 lg:p-8 md:border-accent md:border-2 rounded-lg shadow-lg">
             <div className="w-full h-[450px] rounded-lg overflow-hidden shadow-lg">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2322.727289016621!2d18.571985476656067!3d54.39713177261259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd752630cbd85d%3A0x8fc136b01c8dda97!2sBiblioteka%20G%C5%82%C3%B3wna%20Uniwersytetu%20Gda%C5%84skiego!5e0!3m2!1spl!2spl!4v1767037503283!5m2!1spl!2spl"
@@ -223,7 +233,7 @@ export default function Home() {
             delay={0.3}
           >
             <div className=" max-w-2xl mb-4">
-              <h3 className="text-secondary">
+              <h3 className="text-secondary text-xl lg:text-2xl mb-2 flex items-center gap-2 font-semibold">
                 <HowToRegIcon /> Rejestracja
               </h3>
               <p>
@@ -251,7 +261,7 @@ export default function Home() {
             className="self-end"
           >
             <div className="max-w-2xl mb-4">
-              <h3 className="text-secondary">
+              <h3 className="text-secondary text-xl lg:text-2xl mb-2 flex items-center gap-2 font-semibold">
                 <GroupsIcon /> Zespoły
               </h3>
               <p>Zespoły muszą liczyć od trzech do pięciu osób (studentów).</p>

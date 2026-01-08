@@ -1,22 +1,24 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0d0d0d ;
+  --background: #151515 ;
   --foreground: #ededed;
+  --surface: #151516;
 }
 
+/* 83C9CD, D1DBD9,4E4C9B */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   
-  --color-primary: #5227FF;
-  --color-secondary: #FF9FFC;
-  --color-tertiary: #B19EEF;
-  /* --color-accent: #B19EEF; */
-  --color-surface: #0a0a0a;
-  --color-outline: #2d2b3c;
+  --color-primary: #7e58fd;
+  --color-secondary: #87C4BB;
+  --color-tertiary: #F8DBD2;
+  --color-accent: #746299;
+  /* 0a0a0a */
+  --color-surface: #0d0d0d;
   
   /* Additional custom fonts */
   --font-grotesk: var(--font-space-grotesk);
@@ -43,4 +45,21 @@ body {
   background: var(--background);
   color: var(--foreground);
   
+}
+
+/* Custom list style for a) b) c) format */
+.list-alpha-paren {
+  list-style: none;
+  counter-reset: list-counter;
+}
+
+.list-alpha-paren li {
+  counter-increment: list-counter;
+  position: relative;
+}
+
+.list-alpha-paren li::before {
+  content: counter(list-counter, lower-alpha) ") ";
+  position: absolute;
+  left: -1.5em;
 }

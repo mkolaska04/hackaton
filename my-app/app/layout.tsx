@@ -30,8 +30,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Idea2Impact Hackathon 2025",
-  description: "Strona wydarzenia Idea2Impact Hackathon 2025",
+  title: "Idea2Impact ",
+  description:
+    "Idea2Impact Hackathon 2026 to wydarzenie na Uniwersytecie Gdańskim, podczas którego uczestnicy wspólnie tworzą innowacyjne projekty i realne rozwiązania. Dołącz i zamień pomysł w realny wpływ.",
   keywords: [
     "hackathon",
     "Idea2Impact",
@@ -61,6 +62,24 @@ export const metadata: Metadata = {
     "coding",
     "design",
   ],
+  metadataBase: new URL("https://idea2impact.pl"),
+  openGraph: {
+    title: "Idea2Impact Hackathon 2026",
+    description:
+    "Idea2Impact Hackathon 2026 to wydarzenie na Uniwersytecie Gdańskim, podczas którego uczestnicy wspólnie tworzą innowacyjne projekty i realne rozwiązania. Dołącz i zamień pomysł w realny wpływ.",
+    url: "https://idea2impact.pl",
+    siteName: "Idea2Impact",
+    locale: "pl_PL",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Idea2Impact Hackathon 2026",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -70,7 +89,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${sans.variable} ${code.variable} ${inter.variable} antialiased flex flex-col`}
       >

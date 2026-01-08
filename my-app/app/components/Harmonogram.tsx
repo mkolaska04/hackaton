@@ -2,27 +2,27 @@ import { AccessAlarm } from "@mui/icons-material";
 import AnimatedContent from "./AnimatedContent";
 import AccessAlarmIcon from "@mui/icons-material/AccessAlarm";
 
-export default function Harmonogram() {
+export default function Harcodegram() {
   return (
     <>
-      <h2 className="text-3xl font-semibold  text-center">
-        &lt;-- Harmonogram --&gt;
+      <h2 className="my-4 text-3xl lg:text-4xl font-code font-semibold  text-center text-primary max-w-5xl mx-auto px-4">
+         Harmonogram 
       </h2>
-      <section className="w-full px-4 lg:w-3/5 mx-auto">
+      <section className="w-full max-w-5xl px-4 md:px-8 lg:px-12 mx-auto overflow-hidden">
         <AnimatedContent
-          distance={150}
+          distance={50}
           direction="horizontal"
           reverse={false}
           duration={1.2}
           ease="power3.out"
           initialOpacity={0.2}
           animateOpacity
-          scale={1.1}
+          scale={1.0}
           threshold={0.2}
           delay={0.3}
         >
-          <div className="p-4 border-2 border-outline rounded-md mb-4">
-            <h3 className="text-secondary">Faza Wstępna</h3>
+          <div className="p-4 border-2 border-accent rounded-md mb-4 break-words">
+            <h3 className="text-secondary text-lg lg:text-xl">Faza Wstępna</h3>
             <p>
               Uczestnicy otrzymają szczegółową dokumentację z zasadami,
               wytycznymi i terminami przed właściwym wydarzeniem.
@@ -30,31 +30,31 @@ export default function Harmonogram() {
           </div>
         </AnimatedContent>
         <AnimatedContent
-          distance={150}
+          distance={50}
           direction="horizontal"
           reverse={true}
           duration={1.2}
           ease="power3.out"
           initialOpacity={0.2}
           animateOpacity
-          scale={1.1}
+          scale={1.0}
           threshold={0.2}
           delay={0.3}
         >
-          <div className="p-4 border-2 border-outline rounded-md mb-4">
-            <h3 className="text-secondary">Etap 1: Sesja startowa</h3>
+          <div className="p-4 border-2 border-accent rounded-md mb-4 break-words">
+            <h3 className="text-secondary text-lg lg:text-xl">Etap 1: Sesja startowa</h3>
             <p>
               Wyjaśnienie zasad, celów i logistyki. Organizatorzy przedstawią
               wprowadzenie do wydarzenia oraz ujawnią oficjalne wyzwania lub
               tematy. Start: Ok. 16:00.
             </p>
-            <h4 className="text-tertiary mt-2">Warsztaty/prezentacje</h4>
+            <h4 className="text-secondary mt-2">Warsztaty/prezentacje</h4>
             <p>
               Na początku przewidziane są warsztaty (ok. 2h) dotyczące
               zarządzania projektami, prototypowania, pracy zespołowej,
               elementów design thinking oraz mindfulness.
             </p>
-            <h4 className="text-tertiary mt-2">Prezentacja Problemów</h4>
+            <h4 className="text-secondary mt-2">Prezentacja Problemów</h4>
             <p>
               Ok. 3-minutowa prezentacja problemów zgłoszonych przez organizacje
               przez Beneficjentów (ok. godz.?). Beneficjenci są dostępni na
@@ -64,19 +64,19 @@ export default function Harmonogram() {
           </div>
         </AnimatedContent>
         <AnimatedContent
-          distance={150}
+          distance={50}
           direction="horizontal"
           reverse={false}
           duration={1.2}
           ease="power3.out"
           initialOpacity={0.2}
           animateOpacity
-          scale={1.1}
+          scale={1.0}
           threshold={0.2}
           delay={0.3}
         >
-          <div className="p-4 border-2 border-outline rounded-md mb-4">
-            <h3 className="text-secondary">Etap 2: Faza Rozwoju</h3>
+          <div className="p-4 border-2 border-accent rounded-md mb-4 break-words">
+            <h3 className="text-secondary text-lg lg:text-xl">Etap 2: Faza Rozwoju</h3>
             <p>
               Intensywna praca zespołów nad projektami ze wsparciem mentorów.
               Zachęca się zespoły do iteracji pomysłów oraz rozwijania
@@ -90,19 +90,19 @@ export default function Harmonogram() {
           </div>
         </AnimatedContent>
         <AnimatedContent
-          distance={150}
+          distance={50}
           direction="horizontal"
           reverse={true}
           duration={1.2}
           ease="power3.out"
           initialOpacity={0.2}
           animateOpacity
-          scale={1.1}
+          scale={1.0}
           threshold={0.2}
           delay={0.3}
         >
-          <div className="p-4 border-2 border-outline rounded-md mb-4">
-            <h3 className="text-secondary">Etap 3: Sesje Kontrolne</h3>
+          <div className="p-4 border-2 border-accent rounded-md mb-4 break-words">
+            <h3 className="text-secondary text-lg lg:text-xl">Etap 3: Sesje Kontrolne</h3>
             <p>
               Organizatorzy mogą planować punkty kontrolne w celu oceny
               postępów, zapewnienia informacji zwrotnych i utrzymania tempa
@@ -111,19 +111,19 @@ export default function Harmonogram() {
           </div>
         </AnimatedContent>
         <AnimatedContent
-          distance={150}
+          distance={50}
           direction="horizontal"
           reverse={false}
           duration={1.2}
           ease="power3.out"
           initialOpacity={0.2}
           animateOpacity
-          scale={1.1}
+          scale={1.0}
           threshold={0.2}
           delay={0.3}
         >
-          <div className="p-4 border-2 border-outline rounded-md mb-4">
-            <h3 className="text-secondary">
+          <div className="p-4 border-2 border-accent rounded-md mb-4 break-words">
+            <h3 className="text-secondary text-lg lg:text-xl">
               Etap 4: Termin składania zgłoszeń
             </h3>
             <p>
@@ -138,19 +138,19 @@ export default function Harmonogram() {
         </AnimatedContent>
 
         <AnimatedContent
-          distance={150}
+          distance={50}
           direction="horizontal"
           reverse={true}
           duration={1.2}
           ease="power3.out"
           initialOpacity={0.2}
           animateOpacity
-          scale={1.1}
+          scale={1.0}
           threshold={0.2}
           delay={0.3}
         >
-          <div className="p-4 border-2 border-outline rounded-md mb-4">
-            <h3 className="text-secondary">Etap 5: Prezentacje Finałowe</h3>
+          <div className="p-4 border-2 border-accent rounded-md mb-4 break-words">
+            <h3 className="text-secondary text-lg lg:text-xl">Etap 5: Prezentacje Finałowe</h3>
             <p>
               Zespoły prezentują swoje projekty Jurorom. Prezentacje powinny
               trwać od pięciu do dziesięciu minut. Prezentacja prac: Ok. godz.
@@ -170,19 +170,19 @@ export default function Harmonogram() {
           </div>
         </AnimatedContent>
         <AnimatedContent
-          distance={150}
+          distance={50}
           direction="horizontal"
           reverse={false}
           duration={1.2}
           ease="power3.out"
           initialOpacity={0.2}
           animateOpacity
-          scale={1.1}
+          scale={1.0}
           threshold={0.2}
           delay={0.3}
         >
-          <div className="p-4 border-2 border-outline rounded-md mb-4">
-            <h3 className="text-secondary">
+          <div className="p-4 border-2 border-accent rounded-md mb-4 break-words">
+            <h3 className="text-secondary text-lg lg:text-xl">
               Etap 6: Ocena i Ceremonia Wręczenia Nagród
             </h3>
             <p>

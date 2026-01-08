@@ -2,8 +2,8 @@ import Image from "next/image";
 export default function Organizatorzy() {
         return (
                 <>
-                 <h2 className="text-3xl font-semibold text-center">
-          &lt;-- Organizatorzy --&gt;
+                 <h2 className="text-3xl lg:text-4xl font-code font-semibold text-center text-primary">
+          Organizatorzy
         </h2>
         <section className="w-full px-4 lg:w-4/5 xl:w-3/5 mx-auto p-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 items-center">
@@ -49,10 +49,10 @@ export default function Organizatorzy() {
             <div className="flex flex-col items-center">
               <div className="relative w-4/5 aspect-square">
                 <Image
-                  src="/WIP_logo.jpg"
+                  src="/logo_wip.png"
                   alt="Koło Naukowe Work in Progress Logo"
                   fill
-                  className="object-contain rounded-full"
+                  className="object-contain "
                 />
               </div>
               <p className="mt-4 text-center font-medium">

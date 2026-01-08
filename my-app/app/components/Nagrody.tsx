@@ -4,8 +4,8 @@ import RedeemIcon from "@mui/icons-material/Redeem";
 export default function Nagrody() {
         return (
                 <>
-                <h2 className="text-3xl font-semibold  text-center">
-          &lt;-- Nagrody --&gt;
+                <h2 className="text-3xl lg:text-4xl font-code font-semibold  text-center text-primary">
+          Nagrody
         </h2>
         <FadeContent blur={true} duration={1000} initialOpacity={0}>
           <section className="w-full lg:w-3/5 mx-auto px-4">
@@ -75,7 +75,7 @@ export default function Nagrody() {
 
             {/* Dodatkowe informacje */}
             <div className="space-y-4">
-              <div className="bg-surface/50 border border-outline rounded-lg p-6">
+              <div className="bg-surface/50 border border-accent rounded-lg p-6">
                 <h4 className="text-lg font-semibold text-secondary mb-3">
                   <GroupsIcon /> Dla wszystkich uczestników
                 </h4>
@@ -88,7 +88,7 @@ export default function Nagrody() {
                 </p>
               </div>
 
-              <div className="bg-surface/50 border border-outline rounded-lg p-6">
+              <div className="bg-surface/50 border border-accent rounded-lg p-6">
                 <h4 className="text-lg font-semibold text-tertiary mb-3">
                   <RedeemIcon /> Dodatkowo
                 </h4>

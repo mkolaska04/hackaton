@@ -5,8 +5,8 @@ import CoPresentIcon from "@mui/icons-material/CoPresent";
 export default function Kryteria() {
   return (
     <>
-      <h2 className="text-3xl font-semibold  text-center">
-        &lt;-- Kryteria Oceny Projektów --&gt;
+      <h2 className="text-3xl lg:text-4xl font-code font-semibold  text-center text-primary">
+        Kryteria Oceny Projektów
       </h2>
 
       <section className="w-full lg:w-3/5 mx-auto px-4">

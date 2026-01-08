@@ -11,16 +11,31 @@ import HowToRegIcon from "@mui/icons-material/HowToReg";
 import LocationPinIcon from "@mui/icons-material/LocationPin";
 import Organizatorzy from "./components/Organizatorzy";
 import Nagrody from "./components/Nagrody";
-import Harmonogram from "./components/Harmonogram";
 import Kryteria from "./components/Kryteria";
 import GpsFixedIcon from '@mui/icons-material/GpsFixed';
 import HelpCenterIcon from '@mui/icons-material/HelpCenter';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import Link from "next/link";
+import Modal from "./components/Modal";
 
 export default function Home() {
   const [windowHeight, setWindowHeight] = useState<number | string>("100vh");
   const [lowPerf, setLowPerf] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const eventDate = new Date("2026-03-06T16:00:00");
+  
+  // Daty zapisów
+  const registrationStartDate = new Date("2026-02-14T00:00:00");
+  const registrationEndDate = new Date("2026-02-27T23:59:59");
+  const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLScCTLeXWdAGKHNl0AYy7nWMa6E9Syt_DUJN2kPy_9hn0nZ3fQ/viewform?usp=sharing&ouid=110319299113867414103";
+
+  const handleRegistrationClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const now = new Date();
+    if (now < registrationStartDate || now > registrationEndDate) {
+      e.preventDefault();
+      setIsModalOpen(true);
+    }
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -37,17 +52,18 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen items-center justify-center font-sans ">
+    <div className="flex flex-col min-h-screen items-center justify-center font-sans overflow-x-hidden ">
       <div
+        id="hero-section"
         style={{
           width: "100%",
           height: windowHeight || "100vh",
           position: "relative",
-          backgroundColor: "var(--color-surface)",
+          backgroundColor: "#5C4D8D",
         }}
       >
         <LiquidEther
-          colors={["#5227FF", "#FF9FFC", "#B19EEF"]}
+          colors={[  "#746299", "#87C4BB", "#FEDCD4 ",  "#87C4BB", "#87C4BB",  ]}
           mouseForce={lowPerf ? 16 : 20}
           cursorSize={lowPerf ? 90 : 100}
           isViscous={lowPerf ? false : true}
@@ -65,32 +81,44 @@ export default function Home() {
           dt={0.014}
           BFECC={true}
         />
-        <section className="flex flex-col justify-center w-fit absolute bottom-8 left-8 lg:bottom-12 lg:left-12">
-          <h1 className="text-5xl font-grotesk font-bold flex flex-col ">
+        <section className="flex flex-col justify-center w-fit absolute bottom-4 left-4 lg:bottom-8 lg:left-8 lg:bottom-12 lg:left-12">
+          <h1 className="text-3xl lg:text-5xl font-inter font-semibold tracking-wide flex flex-col ">
             <div>
-              Idea2Impact{" "}
+              IDEA2IMPACT{" "}
               <span className="text-secondary animate-blink" id="cursor">
                 |
               </span>
             </div>
-            <span className="text-2xl font-grotesk ">Hackathon 2026</span>
+            <span className="text-xl lg:text-2xl font-code ">Hackathon 2026</span>
           </h1>
         </section>
         <div className="flex flex-col w-fit absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <h2 className="text-4xl font-bold text-white mb-4 mt-10 flex justify-center font-grotesk">
+          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 mt-10 flex justify-center font-code">
             Do wydarzenia zostało:
           </h2>
 
           <Timer eventDate={eventDate} />
-          <button className="mt-8 px-6 py-3 bg-white text-primary font-semibold font-inter rounded-lg hover:bg-gray-300 transition w-fit mx-auto text-2xl">
+          <Link
+            href={formUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={handleRegistrationClick}
+            className="mt-8 px-6 py-3 bg-white text-primary font-semibold font-inter rounded-lg text-2xl w-fit mx-auto shadow-md transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5 hover:shadow-lg hover:bg-gray-100"
+          >
             Zapisz się!
-          </button>
+          </Link>
         </div>
       </div>
+      <Modal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)}
+        startDate="14.02.2026"
+        endDate="27.02.2026"
+      />
       <main className=" w-full mt-16 mb-8 space-y-8">
         <Divider />
-        <h2 className="text-3xl font-semibold text-center">
-          &lt;-- O wydarzeniu --&gt;
+        <h2 className="text-4xl font-semibold text-center text-primary font-code">
+           O wydarzeniu 
         </h2>
         <section className=" max-w-7xl p-8 flex  gap-8 flex-col justify-between items-between  w-full lg:w-3/5 mx-auto">
           <AnimatedContent
@@ -112,7 +140,7 @@ export default function Home() {
               rozwiązaniami realnych wyzwań. Wyzwania te są zgłaszane przez
               fundacje, stowarzyszenia i inne organizacje działające na rzecz
               obszarów ważnych dla społeczeństwa.
-              <p className="text-tertiary "><CalendarMonthIcon /> Kiedy? 6-7 marca</p>
+              <p className="text-secondary "><CalendarMonthIcon /> Kiedy? 6-7 marca</p>
             </div>
           </AnimatedContent>
           <AnimatedContent
@@ -143,20 +171,20 @@ export default function Home() {
             </div>
           </AnimatedContent>
           <div className="flex justify-center text-white mt-4 text-center">
-            <div className="border-r-4 border-secondary inline p-2 text-2xl font-semibold">
+            <div className="border-r-4 border-primary inline p-2 text-lg lg:text-2xl font-semibold">
               3-5 osobowe zespoły
             </div>
-            <div className="inline p-2 text-2xl font-semibold">
+            <div className="inline p-2 text-lg lg:text-2xl font-semibold">
               24h programowania
             </div>
           </div>
         </section>
         <Divider />
-        <h2 className="text-3xl font-semibold  text-center">
-          &lt;-- Lokalizacja wydarzenia --&gt;
+        <h2 className="text-3xl lg:text-4xl font-semibold  text-center text-primary font-code">
+           Lokalizacja wydarzenia 
         </h2>
         <FadeContent blur={true} duration={1000} initialOpacity={0}>
-          <section className="w-full lg:w-3/5 mx-auto p-8 border-surface border-2 rounded-lg shadow-lg">
+          <section className="w-full lg:w-3/5 mx-auto p-8 border-accent border-2 rounded-lg shadow-lg">
             <div className="w-full h-[450px] rounded-lg overflow-hidden shadow-lg">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2322.727289016621!2d18.571985476656067!3d54.39713177261259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd752630cbd85d%3A0x8fc136b01c8dda97!2sBiblioteka%20G%C5%82%C3%B3wna%20Uniwersytetu%20Gda%C5%84skiego!5e0!3m2!1spl!2spl!4v1767037503283!5m2!1spl!2spl"
@@ -169,17 +197,17 @@ export default function Home() {
               />
             </div>
             <div className="mt-6 text-center">
-              <p className="text-lg font-semibold mb-2">
+              <p className="text-lg font-semibold mb-2 text-secondary">
                 <LocationPinIcon />
                 Uniwersytet Gdański - Biblioteka Główna
               </p>
-              <p className="text-gray-600">Wita Stwosza 53, 80-308 Gdańsk</p>
+              <p className="text-gray-400">Wita Stwosza 53, 80-308 Gdańsk</p>
             </div>
           </section>
         </FadeContent>
         <Divider />
-        <h2 className="text-3xl font-semibold  text-center">
-          &lt;-- Uczestnictwo i struktury zespołów --&gt;
+        <h2 className="text-3xl lg:text-4xl font-code font-semibold  text-center text-primary">
+          Uczestnictwo i struktury zespołów
         </h2>
         <section className=" max-w-7xl p-8 flex  gap-8 flex-col justify-between items-between  w-full lg:w-3/5 mx-auto">
           <AnimatedContent
@@ -236,9 +264,6 @@ export default function Home() {
             </div>
           </AnimatedContent>
         </section>
-
-        <Divider />
-        <Harmonogram />
         <Divider />
         <Kryteria />
         <Divider />

@@ -40,11 +40,11 @@ export default function Home() {
         </div>
          
           <section className="flex flex-col justify-center w-fit absolute bottom-8 left-8 lg:bottom-12 lg:left-12">
-          <h1 className="text-5xl font-grotesk font-bold">Idea2Impact <span className="text-secondary animate-blink" id="cursor">|</span></h1>
-          <p className="text-2xl font-grotesk">Hackathon 2025</p>
+          <h1 className="text-5xl font-code font-bold">Idea2Impact <span className="text-secondary animate-blink" id="cursor">|</span></h1>
+          <p className="text-2xl font-code>Hackathon 2025</p>
         </section>
         <div className="flex flex-col w-fit absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" >
-          <h1 className="text-4xl font-bold text-white mb-4 mt-10 flex justify-center font-grotesk">
+          <h1 className="text-4xl font-bold text-white mb-4 mt-10 flex justify-center font-code">
             Do wydarzenia zostało:
           </h1>
 

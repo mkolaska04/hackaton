@@ -9,20 +9,20 @@ export default function Kryteria() {
         Kryteria Oceny Projektów
       </h2>
 
-      <section className="w-full lg:w-3/5 mx-auto px-4">
-        <p className="text-lg mb-2">
+      <section className="w-9/10 lg:w-3/5 mx-auto p-8">
+        <p className="text-lg mb-2 text-justify">
           Projekty będą oceniane przez Jurorów zgodnie z kartą oceny Idea2Impact
           (maksymalnie 100 punktów).{" "}
         </p>
-        <ul className=" px-4 lg:px-8 space-y-4 mb-6">
-          <li>
+        <ul className="pt-4 px-4 lg:px-8 space-y-4 mb-6">
+          <li className="text-justify">
             <span className="font-semibold text-secondary text-lg lg:text-xl flex items-center gap-2">
               <TipsAndUpdatesIcon /> Idea (Innowacyjność i Interdyscyplinarność){" "}
             </span>
             Nieszablonowe podejście; wkład wiedzy z różnych dziedzin (np.
             psychologia, prawo, socjologia). (25 punktów)
           </li>
-          <li>
+          <li className="text-justify">
             <span className="font-semibold text-secondary text-lg lg:text-xl flex items-center gap-2">
               <EngineeringIcon /> To (Kompletność, Wykonalność i Prototyp){" "}
             </span>
@@ -32,7 +32,7 @@ export default function Kryteria() {
             Funkcjonalność prototypu (lub logiczny opis procesu); jakość
             wykonania, estetyka i UX (User Experience). (40 punktów)
           </li>
-          <li>
+          <li className="text-justify">
             <span className="font-semibold text-secondary text-lg lg:text-xl flex items-center gap-2">
               <RocketLaunchIcon /> Impact (Dopasowanie i Wpływ){" "}
             </span>
@@ -40,7 +40,7 @@ export default function Kryteria() {
             ułatwienie życia docelowym odbiorcom, potencjał użyteczności. (25
             punktów)
           </li>
-          <li>
+          <li className="text-justify">
             <span className="font-semibold text-secondary text-lg lg:text-xl flex items-center gap-2">
               <CoPresentIcon /> Prezentacja (Pitch), Praca zespołowa{" "}
             </span>

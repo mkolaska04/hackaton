@@ -32,7 +32,8 @@ export default function Home() {
 
   // Sprawdzamy czy jesteśmy w okresie zapisów
   const now = new Date();
-  const isRegistrationOpen = now >= registrationStartDate && now <= registrationEndDate;
+  const isRegistrationOpen =
+    now >= registrationStartDate && now <= registrationEndDate;
 
   useEffect(() => {
     const handleResize = () => {
@@ -78,7 +79,7 @@ export default function Home() {
           dt={0.014}
           BFECC={true}
         />
-        <section className="flex flex-col justify-center w-fit absolute bottom-4 left-4 lg:bottom-8 lg:left-8 lg:bottom-12 lg:left-12">
+        <section className=" flex flex-col justify-center w-fit absolute bottom-4 left-4 lg:bottom-8 lg:left-8 lg:bottom-12 lg:left-12">
           <h1 className="text-3xl lg:text-5xl font-inter font-semibold tracking-wide flex flex-col ">
             <div>
               IDEA2IMPACT{" "}
@@ -86,7 +87,7 @@ export default function Home() {
                 |
               </span>
             </div>
-            <span className="text-xl lg:text-2xl font-code ">
+            <span className="text-xl lg:text-3xl font-code ">
               Hackathon 2026
             </span>
           </h1>
@@ -102,14 +103,14 @@ export default function Home() {
               href={formUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 px-6 py-3 bg-white text-primary font-semibold font-inter rounded-lg text-2xl w-fit mx-auto shadow-md transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5 hover:shadow-lg hover:bg-gray-100"
+              className="mt-8 px-6 py-3 bg-white text-primary font-semibold font-inter rounded-lg text-3xl w-fit mx-auto shadow-md transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5 hover:shadow-lg hover:bg-gray-100"
             >
               Zapisz się!
             </Link>
           ) : (
             <button
               onClick={() => setIsModalOpen(true)}
-              className="mt-8 px-6 py-3 bg-white text-primary font-semibold font-inter rounded-lg text-2xl w-fit mx-auto shadow-md transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5 hover:shadow-lg hover:bg-gray-100"
+              className="mt-8 px-6 py-3 bg-white text-primary font-semibold font-inter rounded-lg text-3xl w-fit mx-auto shadow-md transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5 hover:shadow-lg hover:bg-gray-100"
             >
               Zapisz się!
             </button>
@@ -127,7 +128,7 @@ export default function Home() {
         <h2 className="text-4xl font-semibold text-center text-primary font-code">
           O wydarzeniu
         </h2>
-        <section className=" max-w-7xl p-8 flex  gap-8 flex-col justify-between items-between  w-full lg:w-3/5 mx-auto">
+        <section className=" w-9/10 lg:w-3/5  mx-auto p-8 flex  gap-8 flex-col justify-between items-between  w-full lg:w-3/5 mx-auto">
           <AnimatedContent
             distance={150}
             direction="horizontal"
@@ -140,21 +141,17 @@ export default function Home() {
             threshold={0.2}
             delay={0.3}
           >
-            <div className="max-w-2xl self-start text-lg">
-              <p className="text-secondary text-xl lg:text-2xl mb-2 items-center flex font-semibold gap-2">
-                <HelpCenterIcon /> O co chodzi?
+            <div className="">
+              <p className="text-secondary text-lg lg:text-2xl mb-2 items-center flex font-semibold gap-2">
+                {/* <HelpCenterIcon /> O co chodzi? */}
               </p>
-              <p>
+              <p className="text-justify">
                 Hackathon Idea2Impact to społeczne wydarzenie, którego celem
                 jest zebranie studentów z różnych dyscyplin, aby współpracowali
                 nad rozwiązaniami realnych wyzwań. Wyzwania te są zgłaszane
                 przez fundacje, stowarzyszenia i inne organizacje działające na
                 rzecz obszarów ważnych dla społeczeństwa.
               </p>
-
-              <p className="text-secondary text-xl lg:text-2xl my-2 flex items-center gap-2">
-                <CalendarMonthIcon /> Kiedy? 6-7 marca
-              </p>
             </div>
           </AnimatedContent>
           <AnimatedContent
@@ -168,27 +165,45 @@ export default function Home() {
             scale={1.1}
             threshold={0.2}
             delay={0.3}
-            className="self-end"
+            // className="self-end"
           >
-            <div className="max-w-2xl text-lg">
-              <p className="text-secondary text-xl lg:text-2xl mb-2 flex items-center gap-2 font-semibold">
+            <h3 className="text-secondary text-lg lg:text-2xl mb-2 flex items-center gap-2 font-semibold">
+              <CalendarMonthIcon /> Kiedy? 6-7 marca
+            </h3>
+          </AnimatedContent>
+          <AnimatedContent
+            distance={150}
+            direction="horizontal"
+            reverse={false}
+            duration={1.2}
+            ease="power3.out"
+            initialOpacity={0.2}
+            animateOpacity
+            scale={1.1}
+            threshold={0.2}
+            delay={0.3}
+            // className="self-end"
+          >
+            <div className="">
+              <h3 className="text-secondary text-lg lg:text-2xl mb-2 flex items-center gap-2 font-semibold">
                 <GpsFixedIcon /> Cel projektu
+              </h3>
+              <p className="text-justify">
+                Uczestnicy mają za zadanie stworzyć w czasie Hackatonu
+                innowacyjne i praktyczne rozwiązania, które mają bezpośredni
+                wpływ na poprawę jakości życia oraz wspieranie organizacji w ich
+                codziennej misji. Wydarzenie to ma na celu z jednej strony
+                rozwój umiejętności rozwiązywania problemów i zwiększenie
+                kreatywności w środowisku symulującym rzeczywiste opracowywanie
+                projektów, a z drugiej strony wsparcie organizacji.{" "}
               </p>
-              Uczestnicy mają za zadanie stworzyć w czasie Hackatonu innowacyjne
-              i praktyczne rozwiązania, które mają bezpośredni wpływ na poprawę
-              jakości życia oraz wspieranie organizacji w ich codziennej misji.
-              Wydarzenie to ma na celu z jednej strony rozwój umiejętności
-              rozwiązywania problemów i zwiększenie kreatywności w środowisku
-              symulującym rzeczywiste opracowywanie projektów, a z drugiej
-              strony wsparcie organizacji.{" "}
-              
             </div>
           </AnimatedContent>
           <div className="flex justify-center items-center text-white mt-4 text-center mx-auto ">
-            <div className="border-r-4 border-primary inline px-3 text-lg lg:text-2xl font-semibold w-full">
+            <div className="border-r-4 border-primary inline px-3 text-lg lg:text-3xl font-semibold w-full">
               3-5 osobowe zespoły
             </div>
-            <div className="inline px-3 text-lg lg:text-2xl font-semibold w-full">
+            <div className="inline px-3 text-lg lg:text-3xl font-semibold w-full">
               24h programowania
             </div>
           </div>
@@ -223,7 +238,7 @@ export default function Home() {
         <h2 className="text-3xl lg:text-4xl font-code font-semibold  text-center text-primary">
           Uczestnictwo i struktury zespołów
         </h2>
-        <section className=" max-w-7xl p-8 flex  gap-8 flex-col justify-between items-between  w-full lg:w-3/5 mx-auto">
+        <section className="w-9/10 lg:w-3/5 p-8 flex  gap-8 flex-col justify-between items-between  w-full lg:w-3/5 mx-auto">
           <AnimatedContent
             distance={150}
             direction="horizontal"
@@ -236,18 +251,17 @@ export default function Home() {
             threshold={0.2}
             delay={0.3}
           >
-            <div className=" max-w-2xl mb-4">
-              <h3 className="text-secondary text-xl lg:text-2xl mb-2 flex items-center gap-2 font-semibold">
+            <div className="  mb-4 mx-auto">
+              <h3 className="text-secondary text-lg lg:text-2xl mb-2 flex items-center gap-2 font-semibold">
                 <HowToRegIcon /> Rejestracja
               </h3>
-              <p>
+              <p className="text-justify">
                 Aby wziąć udział w hackathonie, studenci muszą ukończyć proces
-                rejestracji. Aby zapewnić sobie miejsce, rejestracja musi zostać
-                zakończona przed oficjalnym rozpoczęciem wydarzenia. Uczestnicy,
-                którzy nie zarejestrują się przed oficjalnym rozpoczęciem, mogą
-                zostać zdyskwalifikowani. Wymagana jest również akceptacja
-                regulaminu wydarzenia, w tym zgoda na wykorzystanie danych i
-                wizerunku uczestników w celach związanych z wydarzeniem.
+                rejestracji. Trwa ona od 14 do 27 marca 2026 roku. Brak
+                rejestracji w oficjalnym terminie uniemożliwi uczestnictwo w
+                wydarzeniu. Wymagana jest również akceptacja regulaminu
+                wydarzenia, w tym zgoda na wykorzystanie danych i wizerunku
+                uczestników w celach związanych z wydarzeniem.
               </p>
             </div>
           </AnimatedContent>
@@ -262,18 +276,17 @@ export default function Home() {
             scale={1.1}
             threshold={0.2}
             delay={0.3}
-            className="self-end"
+            // className="self-end"
           >
-            <div className="max-w-2xl mb-4">
-              <h3 className="text-secondary text-xl lg:text-2xl mb-2 flex items-center gap-2 font-semibold">
+            <div className=" mb-4 mx-auto">
+              <h3 className="text-secondary text-lg lg:text-2xl mb-2 flex items-center gap-2 font-semibold">
                 <GroupsIcon /> Zespoły
               </h3>
-              <p>Zespoły muszą liczyć od trzech do pięciu osób (studentów).</p>
-              <p>
+              <p className="text-justify">
+                Zespoły muszą liczyć od trzech do pięciu osób (studentów).
                 Osoby, które zgłoszą się indywidualnie lub w parze, zostaną
-                dołączone do innego zespołu. Będą mogły to zrobić samodzielnie,
-                chyba że próba samodzielnego dołączenia się nie powiedzie, wtedy
-                zostaną przydzielone przez Organizatorów.
+                dołączone do innego zespołu. Mogą dokonać tego samodzielnie, a w
+                przypadku niepowodzenia przydziału dokona Organizator.
               </p>
             </div>
           </AnimatedContent>

@@ -26,9 +26,7 @@ export default function Nagrody() {
                   <p className="font-semibold text-lg">Złote medale</p>
                   <p className="text-sm">Monitory 120 Hz, 27&quot;</p>
                   <p className="text-sm">Statywy na monitory</p>
-                  <p className="text-xs text-gray-400 mt-4">
-                    Budżet łączny: 2500 zł
-                  </p>
+                 
                 </div>
               </div>
 
@@ -45,9 +43,7 @@ export default function Nagrody() {
                 <div className="text-center space-y-2">
                   <p className="font-semibold text-lg">Srebrne medale</p>
                   <p className="text-sm">Słuchawki Marshall Major 5</p>
-                  <p className="text-xs text-gray-400 mt-4">
-                    Budżet łączny: 1750 zł
-                  </p>
+                 
                 </div>
               </div>
 
@@ -66,9 +62,7 @@ export default function Nagrody() {
                 <div className="text-center space-y-2">
                   <p className="font-semibold text-lg">Brązowe medale</p>
                   <p className="text-sm">Smartwatche</p>
-                  <p className="text-xs text-gray-400 mt-4">
-                    Budżet łączny: 1050 zł
-                  </p>
+               
                 </div>
               </div>
             </div>

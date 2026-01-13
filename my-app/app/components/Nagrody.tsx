@@ -87,8 +87,8 @@ export default function Nagrody() {
                   <RedeemIcon /> Dodatkowo
                 </h4>
                 <p className="text-base">
-                  Przewidziane są gadżety: dyplomy (Infiro), notesy (UG),
-                  długopisy (PG), naklejki i torby hackathonu (Infiro).
+                  Przewidziane są gadżety: dyplomy, naklejki i torby hackathonu (Infiro), notesy (UG),
+                  długopisy (PG).
                 </p>
               </div>
             </div>

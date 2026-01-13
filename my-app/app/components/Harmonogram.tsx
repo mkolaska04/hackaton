@@ -59,7 +59,7 @@ export default function Harcodegram() {
               Ok. 3-minutowa prezentacja problemów zgłoszonych przez organizacje
               przez Beneficjentów (ok. godz.?). Beneficjenci są dostępni na
               miejscu w celu prezentacji problemów. Beneficjenci będą również
-              dostępni pod telefonem w trakcie całego Hackaton.
+              dostępni pod telefonem w trakcie całego Hackatonu.
             </p>
           </div>
         </AnimatedContent>

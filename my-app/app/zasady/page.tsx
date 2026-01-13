@@ -12,7 +12,7 @@ export default function Regulamin() {
   };
 
   return (
-    <main className="min-h-screen  pt-20  ">
+    <main className="min-h-screen  pt-20 text-justify  ">
       <h1 className="text-3xl lg:text-4xl text-center font-code font-semibold py-3 max-w-5xl mx-auto lg:px-4">
         Zasady oraz Regulamin
       </h1>

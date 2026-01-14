@@ -4,6 +4,9 @@ import "./globals.css";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import { Space_Grotesk, Source_Code_Pro, Inter } from "next/font/google";
+
+
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -90,7 +93,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${sans.variable} ${code.variable} ${inter.variable} antialiased flex flex-col`}
+        className={`${geistSans.variable} ${geistMono.variable} ${sans.variable} ${code.variable} ${inter.variable}  antialiased flex flex-col`}
       >
         <Navigation />
         {children}

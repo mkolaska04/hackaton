@@ -5,7 +5,7 @@ import AccessAlarmIcon from "@mui/icons-material/AccessAlarm";
 export default function Harcodegram() {
   return (
     <>
-      <h2 className="my-4 text-3xl lg:text-4xl font-code font-semibold  text-center text-primary max-w-5xl mx-auto px-4">
+      <h2 className="my-4 text-3xl lg:text-4xl font-inter font-semibold  text-center text-primary max-w-5xl mx-auto px-4">
          Harmonogram 
       </h2>
       <section className="w-full max-w-5xl px-4 md:px-8 lg:px-12 mx-auto overflow-hidden">

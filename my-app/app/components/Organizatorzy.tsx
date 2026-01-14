@@ -2,11 +2,12 @@ import Image from "next/image";
 export default function Organizatorzy() {
         return (
                 <>
-                 <h2 className="text-3xl lg:text-4xl font-code font-semibold text-center text-primary">
+                 
+        <section className="w-full px-4 lg:w-4/5 xl:w-3/5 mx-auto p-8">
+        <h2 className="text-3xl lg:text-4xl font-inter tracking-wide uppercase font-semibold text-center text-primary">
           Organizatorzy
         </h2>
-        <section className="w-full px-4 lg:w-4/5 xl:w-3/5 mx-auto p-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 items-end">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-end">
             <div className="flex flex-col items-center ">
               <div className="relative w-4/5 aspect-square">
                 <Image
@@ -46,7 +47,13 @@ export default function Organizatorzy() {
               </p>
             </div>
 
-            <div className="flex flex-col items-center">
+         
+          </div>
+          <h2 className="text-xl lg:text-2xl font-inter tracking-wide uppercase font-semibold text-center text-primary mt-16 mb-8 ">
+          Wsparcie przy organizacji
+        </h2>
+          <div className="flex flex-col items-center">
+               <div className="flex flex-col items-center">
               <div className="relative w-4/5 aspect-square">
                 <Image
                   src="/logo_wip.png"

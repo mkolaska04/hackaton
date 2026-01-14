@@ -4,7 +4,7 @@ import RedeemIcon from "@mui/icons-material/Redeem";
 export default function Nagrody() {
         return (
                 <>
-                <h2 className="text-3xl lg:text-4xl font-code font-semibold  text-center text-primary">
+                <h2 className="text-3xl lg:text-4xl font-inter font-semibold text-center text-primary tracking-wide uppercase">
           Nagrody
         </h2>
         <FadeContent blur={true} duration={1000} initialOpacity={0}>

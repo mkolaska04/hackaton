@@ -50,7 +50,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen items-center justify-center font-sans overflow-x-hidden ">
+    <div className="flex flex-col min-h-screen items-center justify-center font-inter overflow-x-hidden ">
       <div
         id="hero-section"
         style={{
@@ -87,13 +87,13 @@ export default function Home() {
                 |
               </span>
             </div>
-            <span className="text-xl lg:text-3xl font-code ">
+            <span className="text-xl lg:text-3xl font-inter ">
               Hackathon 2026
             </span>
           </h1>
         </section>
         <div className="flex flex-col w-fit absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 mt-10 flex justify-center font-code">
+          <h2 className="text-3xl lg:text-4xl font-semibold text-white mb-4 mt-10 flex justify-center font-inter tracking-wide uppercase text-center">
             Do wydarzenia zostało:
           </h2>
 
@@ -125,7 +125,7 @@ export default function Home() {
       />
       <main className=" w-full mt-16 mb-8 space-y-8">
         <Divider />
-        <h2 className="text-4xl font-semibold text-center text-primary font-code">
+        <h2 className="text-4xl font-semibold text-center text-primary font-inter tracking-wide uppercase">
           O wydarzeniu
         </h2>
         <section className=" w-9/10 lg:w-3/5  mx-auto p-8 flex  gap-8 flex-col justify-between items-between  w-full lg:w-3/5 mx-auto">
@@ -209,7 +209,7 @@ export default function Home() {
           </div>
         </section>
         <Divider />
-        <h2 className="text-3xl lg:text-4xl font-semibold  text-center text-primary font-code">
+        <h2 className="text-3xl lg:text-4xl font-semibold  text-center text-primary font-inter tracking-wide uppercase">
           Lokalizacja wydarzenia
         </h2>
         <FadeContent blur={true} duration={1000} initialOpacity={0}>
@@ -235,7 +235,7 @@ export default function Home() {
           </section>
         </FadeContent>
         <Divider />
-        <h2 className="text-3xl lg:text-4xl font-code font-semibold  text-center text-primary">
+        <h2 className="text-3xl lg:text-4xl font-semibold  text-center text-primary font-inter tracking-wide uppercase">
           Uczestnictwo i struktury zespołów
         </h2>
         <section className="w-9/10 lg:w-3/5 p-8 flex  gap-8 flex-col justify-between items-between  w-full lg:w-3/5 mx-auto">

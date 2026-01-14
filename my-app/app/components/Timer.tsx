@@ -31,7 +31,7 @@ export default function Timer({ eventDate }: { eventDate: Date }) {
     }, [eventDate]);
 
     return (
-        <div className="text-xl lg:text-2xl text-white flex justify-center space-x-4 font-code">
+        <div className="text-xl lg:text-2xl text-white flex justify-center space-x-4 font-inter">
             <span>{timeLeft.days}d </span>
             <span>{timeLeft.hours}h </span>
             <span>{timeLeft.minutes}m </span>

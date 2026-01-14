@@ -28,14 +28,14 @@ export default function Modal({ isOpen, onClose, startDate, endDate }: ModalProp
         className="bg-surface border-2 border-accent rounded-lg p-8 max-w-md w-full shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
-        <h2 className="text-2xl font-bold text-primary mb-4 font-code">
+        <h2 className="text-2xl font-bold text-primary mb-4 font-inter">
           Zapisy są zamknięte
         </h2>
         <p className="text-foreground mb-6 font-inter">
           Zapisy na hackathon IDEA2IMPACT będą dostępne w terminie:
         </p>
         <div className="bg-primary/10 border border-primary/30 rounded-lg p-4 mb-6">
-          <p className="text-lg font-semibold text-center font-code text-white">
+          <p className="text-lg font-semibold text-center font-inter text-white">
             {startDate} - {endDate}
           </p>
         </div>

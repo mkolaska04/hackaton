@@ -46,21 +46,21 @@ export default function Footer() {
               href={formUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white mx-2 text-md my-2 hover:text-secondary font-code hover:cursor-pointer hover:cursor-pointer"
+              className="text-white mx-2 text-md my-2 hover:text-secondary font-inter hover:cursor-pointer hover:cursor-pointer"
             >
               Zapisy
             </Link>
           ) : (
             <div
               onClick={() => setIsModalOpen(true)}
-              className="text-white mx-2 text-md my-2 hover:text-secondary font-code hover:cursor-pointer hover:cursor-pointer"
+              className="text-white mx-2 text-md my-2 hover:text-secondary font-inter hover:cursor-pointer hover:cursor-pointer"
             >
               Zapisy
             </div>
           )}
           <div
             onClick={() => router.push("/zasady")}
-            className="text-white mx-2 text-md my-2 hover:text-secondary font-code hover:cursor-pointer hover:cursor-pointer"
+            className="text-white mx-2 text-md my-2 hover:text-secondary font-inter hover:cursor-pointer hover:cursor-pointer"
           >
             Zasady
           </div>

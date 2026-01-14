@@ -19,7 +19,8 @@ export default function Navigation() {
 
   // Sprawdzamy czy jesteśmy w okresie zapisów
   const now = new Date();
-  const isRegistrationOpen = now >= registrationStartDate && now <= registrationEndDate;
+  const isRegistrationOpen =
+    now >= registrationStartDate && now <= registrationEndDate;
 
   const handleRegistrationClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     const now = new Date();
@@ -55,17 +56,19 @@ export default function Navigation() {
       }`}
     >
       <div className="mx-auto flex justify-between items-center max-w-full overflow-hidden">
-        <div className="text-white text-xl md:text-2xl lg:text-3xl font-inter whitespace-nowrap">IDEA2IMPACT</div>
+        <div className="text-white text-xl md:text-2xl lg:text-3xl font-inter whitespace-nowrap">
+          IDEA2IMPACT
+        </div>
         <div className="hidden md:flex">
           <div
             onClick={() => router.push("/")}
-            className="text-white mx-2 text-xl hover:text-secondary font-code hover:cursor-pointer"
+            className="text-white mx-2 text-xl hover:text-secondary font-inter hover:cursor-pointer"
           >
             O Wydarzeniu
           </div>
-<div
+          <div
             onClick={() => router.push("/harmonogram")}
-            className="text-white mx-2 text-xl hover:text-secondary font-code hover:cursor-pointer"
+            className="text-white mx-2 text-xl hover:text-secondary font-inter hover:cursor-pointer"
           >
             Harmonogram
           </div>
@@ -74,33 +77,54 @@ export default function Navigation() {
               href={formUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white mx-2 text-xl hover:text-secondary font-code"
+              className="text-white mx-2 text-xl hover:text-secondary font-inter"
             >
               Zapisy
             </Link>
           ) : (
             <div
               onClick={() => setIsModalOpen(true)}
-              className="text-white mx-2 text-xl hover:text-secondary font-code hover:cursor-pointer"
+              className="text-white mx-2 text-xl hover:text-secondary font-inter hover:cursor-pointer"
             >
               Zapisy
             </div>
           )}
           <div
             onClick={() => router.push("/zasady")}
-            className="text-white mx-2 text-xl hover:text-secondary font-code hover:cursor-pointer"
+            className="text-white mx-2 text-xl hover:text-secondary font-inter hover:cursor-pointer"
           >
             Zasady
           </div>
         </div>
         <div className="md:hidden flex items-center">
-          <button onClick={toggleDrawer} className="transition">
-            {isDrawerOpen ? <CloseIcon /> : <MenuIcon />}
-          </button>
+          <button 
+  onClick={toggleDrawer} 
+  className="relative w-8 h-8 flex flex-col justify-center items-center group z-50 focus:outline-none"
+>
+  <span 
+    className={`block w-7 h-0.5 bg-white transition-all duration-300 ease-in-out ${
+      isDrawerOpen ? "rotate-45 translate-y-2" : "-translate-y-1"
+    }`}
+  ></span>
+  
+  <span 
+    className={`block w-7 h-0.5 bg-white transition-all duration-300 ease-in-out my-1 ${
+      isDrawerOpen ? "opacity-0" : "opacity-100"
+    }`}
+  ></span>
+  
+  <span 
+    className={`block w-7 h-0.5 bg-white transition-all duration-300 ease-in-out ${
+      isDrawerOpen ? "-rotate-45 -translate-y-1" : "translate-y-1"
+    }`}
+  ></span>
+</button>
           <div
-            className={`absolute top-16 right-0 bg-background/80 shadow-lg rounded-md p-4 flex flex-col ${
-              isDrawerOpen ? "block" : "hidden"
-            }`}
+            className={`absolute top-16 right-0 bg-background/90 backdrop-blur-md shadow-lg rounded-md p-4 flex flex-col transition-all duration-300 ease-in-out origin-top-right ${
+              isDrawerOpen
+                ? "opacity-100 scale-100 pointer-events-auto"
+                : "opacity-0 scale-95 pointer-events-none"
+            }`} 
           >
             <div
               onClick={() => router.push("/")}
@@ -120,21 +144,21 @@ export default function Navigation() {
                 href={formUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white mx-2 text-xl my-2 hover:text-secondary font-code hover:cursor-pointer"
+                className="text-white mx-2 text-xl my-2 hover:text-secondary font-inter hover:cursor-pointer"
               >
                 Zapisy
               </Link>
             ) : (
               <div
                 onClick={() => setIsModalOpen(true)}
-                className="text-white mx-2 text-xl my-2 hover:text-secondary font-code hover:cursor-pointer"
+                className="text-white mx-2 text-xl my-2 hover:text-secondary font-inter hover:cursor-pointer"
               >
                 Zapisy
               </div>
             )}
             <div
               onClick={() => router.push("/zasady")}
-              className="text-white mx-2 text-xl my-2 hover:text-secondary font-code hover:cursor-pointer hover:cursor-pointer"
+              className="text-white mx-2 text-xl my-2 hover:text-secondary font-inter hover:cursor-pointer hover:cursor-pointer"
             >
               Zasady
             </div>

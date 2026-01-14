@@ -13,25 +13,25 @@ export default function Regulamin() {
 
   return (
     <main className="min-h-screen  pt-20 text-justify  ">
-      <h1 className="text-3xl lg:text-4xl text-center font-code font-semibold py-3 max-w-5xl mx-auto lg:px-4">
+      <h1 className="text-3xl lg:text-4xl text-center font-inter font-semibold py-3 max-w-5xl mx-auto lg:px-4 text-primary">
         Zasady oraz Regulamin
       </h1>
-      <h2 className="text-2xl lg:text-3xl text-center font-code font-semibold pb-6">
+      <h2 className="text-2xl lg:text-3xl text-center font-inter font-semibold pb-6 text-primary">
         Hackathonu Idea2Impact
       </h2>
       <Divider />
-      <h3 className="px-2 text-2xl lg:text-3xl text-center font-code font-semibold py-3 max-w-5xl mx-auto lg:px-4">
+      <h3 className="px-2 text-2xl lg:text-3xl text-center font-inter font-semibold py-3 max-w-5xl mx-auto lg:px-4">
         Zasady Rozwoju Projektu i Etyka
       </h3>
       <section className=" w-9/10 mx-auto px-2 max-w-5xl lg:px-12 pb-6">
-        <h4 className="  text-xl lg:text-2xl font-sans font-semibold mt-8 mb-2">
+        <h4 className="  text-xl lg:text-2xl font-inter font-semibold mt-8 mb-2">
           Oryginalność i Zasoby
         </h4>
         <p>
           Cała praca musi być oryginalna i opracowana podczas hackathonu. Zasoby
           zewnętrzne muszą być odpowiednio cytowane.
         </p>
-        <h4 className="text-xl lg:text-2xl font-sans font-semibold mt-8 mb-2">
+        <h4 className="text-xl lg:text-2xl font-inter font-semibold mt-8 mb-2">
           Etyka i Postępowanie
         </h4>
         <p>
@@ -41,7 +41,7 @@ export default function Regulamin() {
           oszustwa, a naruszenia skutkują dyskwalifikacją. Wymagana jest pełna
           szacunku komunikacja.
         </p>
-        <h4 className=" text-xl lg:text-2xl font-sans font-semibold mt-8 mb-2">
+        <h4 className=" text-xl lg:text-2xl font-inter font-semibold mt-8 mb-2">
           Akceptacja Regulaminu
         </h4>
         <p>
@@ -50,15 +50,17 @@ export default function Regulamin() {
         </p>
       </section>
       <Divider />
-      <h3 className="px-2 text-2xl lg:text-3xl text-center font-code font-semibold py-3 max-w-5xl mx-auto lg:px-4">
+      <h3 className="px-2 text-2xl lg:text-3xl text-center font-inter font-semibold py-3 max-w-5xl mx-auto lg:px-4">
         REGULAMIN HACKATHONU SPOŁECZNEGO ORAGNIZOWANEGO POD NAZWĄ „IDEA2IMPACT
         (I2I)”
       </h3>
       <section className=" w-9/10 mx-auto  max-w-5xl lg:px-4 pb-6">
-        <h4 className="text-2xl text-center font-sans font-semibold mt-8 mb-4 lg:px-4">
+        <h4 className="text-2xl text-center font-inter font-semibold mt-8 lg:mt-12 mb-4 lg:px-4">
           §1. Postanowienia ogólne
         </h4>
- <ol className="list-decimal list-outside px-2 ml-4 lg:ml-8 lg:px-8 space-y-4 mb-6">          <li>
+        <ol className="list-decimal list-outside px-2 ml-4 lg:ml-8 lg:px-8 space-y-4 mb-6">
+          {" "}
+          <li>
             Niniejszy dokument określa zasady oraz warunki organizacji i
             uczestnictwa w wydarzeniu zorganizowanym w formule konkursu
             społecznego - hackathonu społecznego pod nazwą „IDEA2IMPACT”, w
@@ -104,13 +106,13 @@ export default function Regulamin() {
           </li>
         </ol>
 
-        <h4 className="text-2xl text-center font-sans font-semibold mt-8 mb-4 px-4">
+        <h4 className="text-2xl text-center font-inter font-semibold mt-8 lg:mt-12 mb-4 px-4">
           §2. Definicje
         </h4>
         <p className="px-4 space-y-4 mb-6">
           Ilekroć w Regulaminie jest mowa o:
         </p>
-         <ol className="list-decimal list-outside px-2 ml-4 lg:ml-8 lg:px-8 space-y-4 mb-6">
+        <ol className="list-decimal list-outside px-2 ml-4 lg:ml-8 lg:px-8 space-y-4 mb-6">
           <li>
             Beneficjencie – rozumie się przez to fundację, stowarzyszenie lub
             inną organizację działającą na rzecz obszarów ważnych dla
@@ -151,10 +153,12 @@ export default function Regulamin() {
             status studenta i dokonała zgłoszenia do Hackathonu.
           </li>
         </ol>
-        <h4 className="text-2xl text-center font-sans font-semibold mt-8 mb-4 lg:px-4">
+        <h4 className="text-2xl text-center font-inter font-semibold mt-8 lg:mt-12 mb-4 lg:px-4">
           §3. Założenia Hackathonu
         </h4>
- <ol className="list-decimal list-outside px-2 ml-4 lg:ml-8 lg:px-8 space-y-4 mb-6">          <li>
+        <ol className="list-decimal list-outside px-2 ml-4 lg:ml-8 lg:px-8 space-y-4 mb-6">
+          {" "}
+          <li>
             Celem Hackathonu jest zebranie studentów różnych dyscyplin, by
             współpracowali nad rozwiązaniami realnych wyzwań i problemów
             zgłaszanych przez fundacje, stowarzyszenia i inne organizacje
@@ -229,10 +233,12 @@ export default function Regulamin() {
           </li>
         </ol>
 
-        <h4 className="text-2xl text-center font-sans font-semibold mt-8 mb-4 lg:px-4">
+        <h4 className="text-2xl text-center font-inter font-semibold mt-8 lg:mt-12 mb-4 lg:px-4">
           §4. Rejestracja uczestnictwa
         </h4>
- <ol className="list-decimal list-outside px-2 ml-4 lg:ml-8 lg:px-8 space-y-4 mb-6">    <li>
+        <ol className="list-decimal list-outside px-2 ml-4 lg:ml-8 lg:px-8 space-y-4 mb-6">
+          {" "}
+          <li>
             Aby wziąć udział w Hackathonie, Uczestnik musi zarejestrować się
             poprzez formularz dostępny na stronie internetowej idea2impact.pl
             najpóźniej przed rozpoczęciem I2I. Organizator może nie dopuścić do
@@ -285,7 +291,8 @@ export default function Regulamin() {
           </li>
           <li>
             Przed rozpoczęciem I2I Uczestnicy otrzymają od Organizatora
-            szczegółową dokumentację z zasadami, wytycznymi i terminami.
+            szczegółową dokumentację z zasadami, wytycznymi i terminami
+            dotyczącymi I2I.
           </li>
           <li>
             Przed dokonaniem rejestracji Uczestnik zobowiązany jest zapoznać się
@@ -308,10 +315,12 @@ export default function Regulamin() {
             zespół do wsparcia Projektu innego zespołu.
           </li>
         </ol>
-        <h4 className="text-2xl text-center font-sans font-semibold mt-8 mb-4 lg:px-4">
+        <h4 className="text-2xl text-center font-inter font-semibold mt-8 lg:mt-12 mb-4 lg:px-4">
           §5. Szczegóły wydarzenia
         </h4>
- <ol className="list-decimal list-outside px-2 ml-4 lg:ml-8 lg:px-8 space-y-4 mb-6">       <li>
+        <ol className="list-decimal list-outside px-2 ml-4 lg:ml-8 lg:px-8 space-y-4 mb-6">
+          {" "}
+          <li>
             Hackathon odbędzie się w terminie 6 – 7 marca 2026 r. i będzie trwał
             24 godziny – od godziny 16:00 w dniu 6 marca 2026 r. do godziny
             16:00 w dniu 7 marca 2026 r.
@@ -323,8 +332,12 @@ export default function Regulamin() {
           </li>
           <li>
             Uczestnicy tworząc Projekty korzystają z własnego sprzętu,
-            materiałów i narzędzi, a Organizator nie ponosi za to
-            odpowiedzialności.
+            materiałów i narzędzi i ponoszą pełną odpowiedzialność za ich
+            właściwe i bezpieczne użytkowanie.Organizator nie ponosi
+            odpowiedzialności za szkody powstałe w związku z korzystaniem z nich
+            przez uczestników, w tym w szczególności za uszkodzenie, zniszczenie
+            lub utratę sprzętu, materiałów lub narzędzi należących do
+            uczestników.
           </li>
           <li>
             Organizator zapewnia dostęp do Internetu oraz materiały plastyczne
@@ -346,18 +359,21 @@ export default function Regulamin() {
             stacjonarnie lub telefonicznie.
           </li>
         </ol>
-        <h4 className="text-2xl text-center font-sans font-semibold mt-8 mb-4 lg:px-4">
+        <h4 className="text-2xl text-center font-inter font-semibold mt-8 lg:mt-12 mb-4 lg:px-4">
           §6. Przebieg Hackathonu
         </h4>
- <ol className="list-decimal list-outside px-2 ml-4 lg:ml-8 lg:px-8 space-y-4 mb-6">        <li>
+        <ol className="list-decimal list-outside px-2 ml-4 lg:ml-8 lg:px-8 space-y-4 mb-6">
+          {" "}
+          <li>
             Szczegółowy program Hackathonu z podziałem na planowane godziny
             rozpoczęcia poszczególnych etapów zostanie opublikowany na stronie
             internetowej www.idea2impact.pl.
           </li>
-
           <li>
             Organizator zakłada następujący przebieg Hackathonu:
- <ol className="list-decimal list-outside px-2 ml-4 lg:ml-8 lg:px-8 space-y-4 mb-6">              <li>
+            <ol className="list-decimal list-outside px-2 ml-4 lg:ml-8 lg:px-8 space-y-4 mb-6">
+              {" "}
+              <li>
                 Sesja Startowa (Kickoff) - wyjaśnienie zasad, celów i
                 organizacji I2I, ujawnienie listy Beneficjentów oraz wyzwań lub
                 problemów do rozwiązania;
@@ -401,10 +417,12 @@ export default function Regulamin() {
             </ol>
           </li>
         </ol>
-        <h4 className="text-2xl text-center font-sans font-semibold mt-8 mb-4 lg:px-4">
+        <h4 className="text-2xl text-center font-inter font-semibold mt-8 lg:mt-12 mb-4 lg:px-4">
           §7. Zasady oceniania i nagrody
         </h4>
- <ol className="list-decimal list-outside px-2 ml-4 lg:ml-8 lg:px-8 space-y-4 mb-6">          <li>
+        <ol className="list-decimal list-outside px-2 ml-4 lg:ml-8 lg:px-8 space-y-4 mb-6">
+          {" "}
+          <li>
             Wszystkie Projekty po ich zaprezentowaniu zostaną ocenione przez
             jury, tj. jury przyzna Projektom punkty.
           </li>
@@ -462,10 +480,12 @@ export default function Regulamin() {
             może przygotować dla Uczestników dodatkowe gadżety.
           </li>
         </ol>
-        <h4 className="text-2xl text-center font-sans font-semibold mt-8 mb-4 lg:px-4">
+        <h4 className="text-2xl text-center font-inter font-semibold mt-8 lg:mt-12 mb-4 lg:px-4">
           §8. Prawa autorskie oraz wykorzystywanie wizerunku
         </h4>
- <ol className="list-decimal list-outside px-2 ml-4 lg:ml-8 lg:px-8 space-y-4 mb-6">          <li>
+        <ol className="list-decimal list-outside px-2 ml-4 lg:ml-8 lg:px-8 space-y-4 mb-6">
+          {" "}
+          <li>
             Uczestnik oświadcza i gwarantuje, że wykonane przez niego lub przy
             współpracy zespołowej w czasie Hackathonu prace, w tym Projekt, mają
             charakter twórczy i oryginalny i nie naruszają̨ jakichkolwiek praw
@@ -481,8 +501,68 @@ export default function Regulamin() {
             nieodpłatnej licencji na wykorzystanie Projektu autorstwa lub
             współautorstwa Uczestnika poprzez wdrożenie w działalności
             statutowej Organizatora lub Beneficjenta, a także w celach
-            promocyjnych, edukacyjnych i informacyjnych na wszystkich polach
-            eksploatacji.
+            promocyjnych, edukacyjnych i informacyjnych na następujących polach
+            eksploatacji:
+            <ul className="list-alpha-paren ml-8 mt-2 space-y-2">
+              <li>
+                wielokrotne wykorzystanie Utworu na własny użytek, użytek swoich
+                jednostek organizacyjnych oraz użytek osób trzecich w celach
+                związanych z realizacją zadań i inwestycji Organizatora.
+              </li>
+              <li>
+                utrwalenie Utworu na wszelkich rodzajach nośników, a w
+                szczególności na nośnikach video, taśmie światłoczułej,
+                magnetycznej, dyskach komputerowych oraz wszystkich typach
+                nośników przeznaczonych do zapisu cyfrowego (np. CD, DVD,
+                Blue-ray, pendrive, itd.),
+              </li>
+              <li>
+                zwielokrotnianie Utworu dowolną techniką w dowolnej ilości, w
+                tym techniką magnetyczną na kasetach video, techniką
+                światłoczułą i cyfrową, techniką zapisu komputerowego na
+                wszystkich rodzajach nośników dostosowanych do tej formy zapisu,
+                wytwarzanie jakąkolwiek techniką egzemplarzy Utworu, w tym
+                techniką drukarską, reprograficzną, zapisu magnetycznego oraz
+                techniką cyfrową,
+              </li>
+              <li>
+                wprowadzania Utworu do pamięci komputera na dowolnej liczbie
+                stanowisk komputerowych oraz do sieci multimedialnej,
+                telekomunikacyjnej, komputerowej, w tym do Internetu,
+              </li>
+              <li>e. wyświetlanie i publiczne odtwarzanie Utworu,</li>
+              <li>
+                nadawanie całości lub wybranych fragmentów Utworu za pomocą
+                wizji albo fonii przewodowej i bezprzewodowej przez stację
+                naziemną,
+              </li>
+              <li> nadawanie za pośrednictwem satelity,</li>
+              <li> reemisja,</li>
+              <li> wymiana nośników, na których Utwór utrwalono,</li>
+              <li> wykorzystanie w utworach multimedialnych,</li>
+              <li>
+                wykorzystywanie całości lub fragmentów Utworu co celów
+                promocyjnych i reklamy,
+              </li>
+              <li>
+                przetwarzanie, wprowadzanie zmian, poprawek, modyfikacji,
+                skrótów,
+              </li>
+              <li>
+                sporządzenie wersji obcojęzycznych, zarówno przy użyciu napisów,
+                jak i lektora,
+              </li>
+              <li>
+                publiczne udostępnianie Utworu w taki sposób, aby każdy mógł
+                mieć do niego dostęp w miejscu i w czasie przez niego wybranym,
+              </li>
+              <li>
+                w zakresie obrotu oryginałem albo egzemplarzami, na których
+                Utwór utrwalono - wprowadzanie do obrotu, użyczenie lub najem
+                oryginału albo egzemplarzy,
+              </li>
+              <li>wielokrotne wykorzystywanie utworu.</li>
+            </ul>
           </li>
           <li>
             Uczestnik udziela Organizatorowi zgody na informowanie o Projektach
@@ -553,10 +633,12 @@ export default function Regulamin() {
             </ol>
           </li>
         </ol>
-        <h4 className="text-2xl text-center font-sans font-semibold mt-8 mb-4 lg:px-4">
+        <h4 className="text-2xl text-center font-inter font-semibold mt-8 lg:mt-12 mb-4 lg:px-4">
           §9. Przetwarzanie danych osobowych
         </h4>
- <ol className="list-decimal list-outside px-2 ml-4 lg:ml-8 lg:px-8 space-y-4 mb-6">          <li>
+        <ol className="list-decimal list-outside px-2 ml-4 lg:ml-8 lg:px-8 space-y-4 mb-6">
+          {" "}
+          <li>
             Organizator w celu organizacji Hackathonu, współpracy przy tworzeniu
             Projektów, przyznania i przekazania nagród oraz publikacji
             informacji o laureatach przetwarza dane osobowe Uczestnika, wobec
@@ -566,6 +648,13 @@ export default function Regulamin() {
             przetwarzaniem danych osobowych i w sprawie swobodnego przepływu
             takich danych oraz uchylenia dyrektywy 95/46/WE (dalej RODO) (Dz.
             Urz. UE L 119, s. 1).
+          </li>
+          <li>
+            Z administratorem można kontaktować się:
+            <ul className="list-alpha-paren ml-8 mt-2 space-y-2">
+              <li>listownie......</li>
+              <li>przez.....</li>
+            </ul>
           </li>
           <li>
             Hackathon przeznaczony jest dla osób pełnoletnich, wobec czego
@@ -601,7 +690,6 @@ export default function Regulamin() {
             roszczeń podatkowych, skarbowych lub cywilnych przeciw
             Administratorowi.
           </li>
-
           <li>
             Uczestnik w każdej chwili może
             <ol className="list-alpha-paren ml-8 mt-2 space-y-2">
@@ -618,18 +706,28 @@ export default function Regulamin() {
                 prawem przetwarzania danych osobowych, którego dokonano na
                 podstawie zgody przed jej cofnięciem,
               </li>
-              <li>wnieść skargę do organu nadzorczego.</li>
+              <li>
+                wnieść skargę do organu nadzorczego - Prezesa Urzędu Ochrony
+                Danych Osobowych.
+              </li>
             </ol>
           </li>
           <li>
             Dane osobowe powierzone Administratorowi nie będą wykorzystane do
             zautomatyzowanego podejmowania decyzji.
           </li>
+          <li>
+            Podanie danych jest dobrowolne jednakże jest warunkiem koniecznym
+            udziału w Hackathonie, a odmowa ich podania jest równoznaczna z
+            brakiem możliwości w nim udziału.
+          </li>
         </ol>
-        <h4 className="text-2xl text-center font-sans font-semibold mt-8 mb-4 lg:px-4">
+        <h4 className="text-2xl text-center font-inter font-semibold mt-8 lg:mt-12 mb-4 lg:px-4">
           §10. Odwołanie wydarzenia, reklamacje i postanowienia końcowe
         </h4>
- <ol className="list-decimal list-outside px-2 ml-4 lg:ml-8 lg:px-8 space-y-4 mb-6">          <li>
+        <ol className="list-decimal list-outside px-2 ml-4 lg:ml-8 lg:px-8 space-y-4 mb-6">
+          {" "}
+          <li>
             Organizator zastrzega sobie prawo do odwołania albo zmiany terminu
             lub miejsca wydarzenia. Może to nastąpić:
             <ol className="list-alpha-paren ml-8 mt-2 space-y-2">
@@ -697,7 +795,7 @@ export default function Regulamin() {
           onClick={() => {
             handleDownload();
           }}
-            className="mt-8 px-6 py-3 bg-white text-primary font-semibold font-inter rounded-lg text-2xl w-fit mx-auto shadow-md transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5 hover:shadow-lg hover:bg-gray-100"
+          className="mt-8 px-6 py-3 bg-white text-primary font-semibold font-inter rounded-lg text-2xl w-fit mx-auto shadow-md transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5 hover:shadow-lg hover:bg-gray-100"
         >
           Pobierz Regulamin (PDF)
         </button>

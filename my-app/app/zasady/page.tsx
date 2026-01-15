@@ -246,7 +246,7 @@ export default function Regulamin() {
             oficjalnym rozpoczęciu I2I.
           </li>
           <li>
-            Rejestracja trwa od 14.02.2026 do 27.02.2026, chyba że przed
+            Rejestracja trwa od 22.01.2026 do 27.02.2026, chyba że przed
             terminem zakończenia rejestracji wyczerpie się limit miejsc dla
             Uczestników.
           </li>

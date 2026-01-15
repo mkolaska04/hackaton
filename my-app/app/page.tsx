@@ -15,6 +15,7 @@ import Kryteria from "./components/Kryteria";
 import GpsFixedIcon from "@mui/icons-material/GpsFixed";
 import HelpCenterIcon from "@mui/icons-material/HelpCenter";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver';
 import Link from "next/link";
 import Modal from "./components/Modal";
 
@@ -25,7 +26,7 @@ export default function Home() {
   const eventDate = new Date("2026-03-06T16:00:00");
 
   // Daty zapisów
-  const registrationStartDate = new Date("2026-02-14T00:00:00");
+  const registrationStartDate = new Date("2026-01-22T00:00:00");
   const registrationEndDate = new Date("2026-02-27T23:59:59");
   const formUrl =
     "https://docs.google.com/forms/d/e/1FAIpQLScCTLeXWdAGKHNl0AYy7nWMa6E9Syt_DUJN2kPy_9hn0nZ3fQ/viewform?usp=sharing&ouid=110319299113867414103";
@@ -120,7 +121,7 @@ export default function Home() {
       <Modal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        startDate="14.02.2026"
+        startDate="22.01.2026"
         endDate="27.02.2026"
       />
       <main className=" w-full mt-16 mb-8 space-y-8">
@@ -199,12 +200,36 @@ export default function Home() {
               </p>
             </div>
           </AnimatedContent>
+           <AnimatedContent
+            distance={150}
+            direction="horizontal"
+            reverse={false}
+            duration={1.2}
+            ease="power3.out"
+            initialOpacity={0.2}
+            animateOpacity
+            scale={1.1}
+            threshold={0.2}
+            delay={0.3}
+          >
+            <div>
+              <h3 className="text-secondary text-lg lg:text-2xl mb-2 flex items-center gap-2 font-semibold">
+                <RecordVoiceOverIcon /> Inicjatorzy wyzwań
+              </h3>
+              <ul className=" list-inside space-y-2">
+                <li className="text-justify">Fundacja Infiro</li>
+                <li className="text-justify">miasto Gdynia ZPS</li>
+                <li className="text-justify">Stowarzyszenie Pomorski Dom</li>
+                <li className="text-justify">Stowarzyszenie Dom na Skraju</li>
+              </ul>
+            </div>
+          </AnimatedContent>
           <div className="flex justify-center items-center text-white mt-4 text-center mx-auto ">
             <div className="border-r-4 border-primary inline px-3 text-lg lg:text-3xl font-semibold w-full">
               3-5 osobowe zespoły
             </div>
             <div className="inline px-3 text-lg lg:text-3xl font-semibold w-full">
-              24h programowania
+              24h hackathonu
             </div>
           </div>
         </section>

@@ -82,7 +82,7 @@ export default function Nagrody() {
                 </p>
               </div>
 
-              <div className="bg-surface/50 border border-accent rounded-lg p-6">
+              {/* <div className="bg-surface/50 border border-accent rounded-lg p-6">
                 <h4 className="text-lg font-semibold text-secondary mb-3 flex items-center gap-2">
                   <RedeemIcon /> Dodatkowo
                 </h4>
@@ -90,7 +90,7 @@ export default function Nagrody() {
                   Przewidziane są gadżety: dyplomy, naklejki i torby hackathonu (Infiro), notesy (UG),
                   długopisy (PG).
                 </p>
-              </div>
+              </div> */}
             </div>
           </section>
         </FadeContent>

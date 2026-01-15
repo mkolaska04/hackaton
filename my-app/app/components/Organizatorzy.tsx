@@ -69,7 +69,7 @@ export default function Organizatorzy() {
         </h2>
         <div className="flex justify-center">
           <div className="flex flex-col items-center">
-            <div className="flex items-center justify-center h-40">
+            <div className="flex items-center justify-center h-40 py-4">
               <Image
                 src="/logo_wip.png"
                 alt="Koło Naukowe Work in Progress Logo"

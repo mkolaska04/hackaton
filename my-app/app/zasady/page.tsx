@@ -51,7 +51,7 @@ export default function Regulamin() {
       </section>
       <Divider />
       <h3 className="px-2 text-2xl lg:text-3xl text-center font-inter font-semibold py-3 max-w-5xl mx-auto lg:px-4">
-        REGULAMIN HACKATHONU SPOŁECZNEGO ORAGNIZOWANEGO POD NAZWĄ „IDEA2IMPACT
+        REGULAMIN HACKATHONU SPOŁECZNEGO ORGANIZOWANEGO POD NAZWĄ „IDEA2IMPACT
         (I2I)”
       </h3>
       <section className=" w-9/10 mx-auto  max-w-5xl lg:px-4 pb-6">
@@ -169,10 +169,6 @@ export default function Regulamin() {
             misji. Wydarzenie to ma na celu rozwój umiejętności rozwiązywania
             problemów i zwiększenie kreatywności w środowisku symulującym
             rzeczywiste opracowywanie projektów, a także wsparcie Beneficjentów.
-          </li>
-          <li>
-            Organizator zapewni w czasie Hackathonu obecność Mentorów, którzy
-            będą doradzać Uczestnikom i konsultować ich pomysły.
           </li>
           <li>
             Efektem pracy Uczestników jest Projekt. Projekt musi składać się z:
@@ -600,11 +596,11 @@ export default function Regulamin() {
                 promujących I2I,
               </li>
               <li>
-                publikację relacji z I2I w formie zdjęć lub materiału
+                rozpowszechnianie i publikację relacji z I2I w formie zdjęć lub materiału
                 audiowizualnego przez Organizatora na potrzeby promocji I2I oraz
                 sprawozdania z jego przebiegu na stronach www, w powstałych
                 publikacjach oraz za pośrednictwem wszelkich pozostałych
-                mediów/kanałów dystrybucji, ale tylko i wyłącznie w kontekście
+                mediów/kanałów dystrybucji, w kontekście
                 promocji I2I oraz sprawozdania z jego przebiegu.
               </li>
             </ol>

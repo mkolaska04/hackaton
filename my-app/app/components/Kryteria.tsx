@@ -9,7 +9,7 @@ export default function Kryteria() {
         Kryteria Oceny Projektów
       </h2>
 
-      <section className="w-9/10 lg:w-3/5 mx-auto lg:p-8">
+      <section className="w-9/10 lg:w-3/5 mx-auto lg:px-8">
         <p className="text-lg mb-2 text-justify">
           Projekty będą oceniane przez Jurorów zgodnie z kartą oceny Idea2Impact
           (maksymalnie 100 punktów).{" "}

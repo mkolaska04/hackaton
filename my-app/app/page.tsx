@@ -129,7 +129,7 @@ export default function Home() {
         <h2 className="text-4xl font-semibold text-center text-primary font-inter tracking-wide uppercase">
           O wydarzeniu
         </h2>
-        <section className=" w-9/10 lg:w-3/5  mx-auto p-8 flex  gap-8 flex-col justify-between items-between  w-full lg:w-3/5 mx-auto">
+        <section className="w-full lg:w-3/5 mx-auto px-4 lg:px-8 flex gap-8 flex-col justify-between items-between">
           <AnimatedContent
             distance={150}
             direction="horizontal"
@@ -143,8 +143,9 @@ export default function Home() {
             delay={0.3}
           >
             <div className="">
-              <p className="text-secondary text-lg lg:text-2xl mb-2 items-center flex font-semibold gap-2">
-                {/* <HelpCenterIcon /> O co chodzi? */}
+              
+              <p className="text-justify mb-4 lg:text-xl text-lg lg:mb-6">
+                <span className="font-semibold text-primary">Fundacja Infiro</span>, <span className="font-semibold text-primary">wydział MFI Uniwersytetu Gdańskiego</span>, <span className="font-semibold text-primary">wydział FTiMS Politechniki Gdańskiej</span> i <span className="font-semibold text-primary">koło naukowe Work in Progress</span> zapraszają Cię na wyjątkowe wydarzenie!
               </p>
               <p className="text-justify">
                 Hackathon Idea2Impact to społeczne wydarzenie, którego celem
@@ -238,7 +239,7 @@ export default function Home() {
           Lokalizacja wydarzenia
         </h2>
         <FadeContent blur={true} duration={1000} initialOpacity={0}>
-          <section className="w-full lg:w-3/5 mx-auto bg-surface p-4 lg:p-8 md:border-accent md:border-2 rounded-lg shadow-lg">
+          <section className="w-full lg:w-3/5 mx-auto bg-surface px-4 lg:p-8 md:border-accent md:border-2 rounded-lg shadow-lg">
             <div className="w-full h-[450px] rounded-lg overflow-hidden shadow-lg">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2322.727289016621!2d18.571985476656067!3d54.39713177261259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd752630cbd85d%3A0x8fc136b01c8dda97!2sBiblioteka%20G%C5%82%C3%B3wna%20Uniwersytetu%20Gda%C5%84skiego!5e0!3m2!1spl!2spl!4v1767037503283!5m2!1spl!2spl"
@@ -263,7 +264,7 @@ export default function Home() {
         <h2 className="text-3xl lg:text-4xl font-semibold  text-center text-primary font-inter tracking-wide uppercase">
           Uczestnictwo i struktury zespołów
         </h2>
-        <section className="w-9/10 lg:w-3/5 p-8 flex  gap-8 flex-col justify-between items-between  w-full lg:w-3/5 mx-auto">
+        <section className="w-9/10 lg:w-3/5 px-4 lg:px-8 flex  gap-8 flex-col justify-between items-between  w-full lg:w-3/5 mx-auto">
           <AnimatedContent
             distance={150}
             direction="horizontal"

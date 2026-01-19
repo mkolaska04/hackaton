@@ -2,7 +2,7 @@ import Image from "next/image";
 export default function Organizatorzy() {
   return (
     <>
-      <section className="w-full px-4 lg:w-4/5 xl:w-3/5 mx-auto p-8">
+      <section className="w-full px-4 lg:w-4/5 xl:w-3/5 mx-auto lg:px-8">
         <h2 className="text-3xl lg:text-4xl font-inter tracking-wide uppercase font-semibold text-center text-primary py-4">
           Organizatorzy
         </h2>

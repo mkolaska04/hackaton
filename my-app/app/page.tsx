@@ -283,7 +283,7 @@ export default function Home() {
               </h3>
               <p className="text-justify">
                 Aby wziąć udział w hackathonie, studenci muszą ukończyć proces
-                rejestracji. Trwa ona od 22 stycznia do 27 marca 2026 roku. Brak
+                rejestracji. Trwa ona od 22 stycznia do 27 lutego 2026 roku. Brak
                 rejestracji w oficjalnym terminie uniemożliwi uczestnictwo w
                 wydarzeniu. Wymagana jest również akceptacja regulaminu
                 wydarzenia, w tym zgoda na wykorzystanie danych i wizerunku

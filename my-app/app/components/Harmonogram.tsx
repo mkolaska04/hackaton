@@ -6,7 +6,7 @@ export default function Harcodegram() {
   return (
     <>
       <h2 className="my-4 text-3xl lg:text-4xl font-inter font-semibold  text-center text-primary max-w-5xl mx-auto px-4">
-         Harmonogram 
+        Harmonogram
       </h2>
       <section className="w-full max-w-5xl px-4 md:px-8 lg:px-12 mx-auto overflow-hidden">
         <AnimatedContent
@@ -42,7 +42,9 @@ export default function Harcodegram() {
           delay={0.3}
         >
           <div className="p-4 border-2 border-accent rounded-md mb-4 break-words">
-            <h3 className="text-secondary text-lg lg:text-xl">Etap 1: Sesja startowa</h3>
+            <h3 className="text-secondary text-lg lg:text-xl">
+              Etap 1: Sesja startowa
+            </h3>
             <p>
               Wyjaśnienie zasad, celów i logistyki. Organizatorzy przedstawią
               wprowadzenie do wydarzenia oraz ujawnią oficjalne wyzwania lub
@@ -50,16 +52,16 @@ export default function Harcodegram() {
             </p>
             <h4 className="text-secondary mt-2">Warsztaty/prezentacje</h4>
             <p>
-              Na początku przewidziane są warsztaty dotyczące
-              zarządzania projektami, prototypowania, pracy zespołowej,
-              elementów design thinking oraz mindfulness.
+              Na początku przewidziane są warsztaty dotyczące zarządzania
+              projektami, prototypowania, pracy zespołowej, elementów design
+              thinking oraz mindfulness.
             </p>
             <h4 className="text-secondary mt-2">Prezentacja Problemów</h4>
             <p>
-              Prezentacja problemów zgłoszonych przez organizacje
-              przez Beneficjentów. Beneficjenci są dostępni na
-              miejscu w celu prezentacji problemów. Beneficjenci będą również
-              dostępni pod telefonem w trakcie całego Hackatonu.
+              Prezentacja wyzwań zgłoszonych przez organizacje partnerskie.
+              Przedstawiciele Beneficjentów będą obecni na miejscu, aby omówić
+              szczegóły problemów, a także pozostaną do dyspozycji telefonicznej
+              przez cały czas trwania Hackathonu.
             </p>
           </div>
         </AnimatedContent>
@@ -76,7 +78,9 @@ export default function Harcodegram() {
           delay={0.3}
         >
           <div className="p-4 border-2 border-accent rounded-md mb-4 break-words">
-            <h3 className="text-secondary text-lg lg:text-xl">Etap 2: Faza Rozwoju</h3>
+            <h3 className="text-secondary text-lg lg:text-xl">
+              Etap 2: Faza Rozwoju
+            </h3>
             <p>
               Intensywna praca zespołów nad projektami ze wsparciem mentorów.
               Zachęca się zespoły do iteracji pomysłów oraz rozwijania
@@ -102,7 +106,9 @@ export default function Harcodegram() {
           delay={0.3}
         >
           <div className="p-4 border-2 border-accent rounded-md mb-4 break-words">
-            <h3 className="text-secondary text-lg lg:text-xl">Etap 3: Sesje Kontrolne</h3>
+            <h3 className="text-secondary text-lg lg:text-xl">
+              Etap 3: Sesje Kontrolne
+            </h3>
             <p>
               Organizatorzy mogą planować punkty kontrolne w celu oceny
               postępów, zapewnienia informacji zwrotnych i utrzymania tempa
@@ -150,23 +156,28 @@ export default function Harcodegram() {
           delay={0.3}
         >
           <div className="p-4 border-2 border-accent rounded-md mb-4 break-words">
-            <h3 className="text-secondary text-lg lg:text-xl">Etap 5: Prezentacje Finałowe</h3>
+            <h3 className="text-secondary text-lg lg:text-xl">
+              Etap 5: Prezentacje Finałowe
+            </h3>
             <p>
               Zespoły prezentują swoje projekty Jurorom. Prezentacje powinny
-              trwać od pięciu do dziesięciu minut.<span className="text-primary"> Prezentacja prac: Ok. godz.
-              13:00. </span>
+              trwać od pięciu do dziesięciu minut.
+              <span className="text-primary">
+                {" "}
+                Prezentacja prac: Ok. godz. 13:00.{" "}
+              </span>
             </p>
             <p className="mt-2 text-tertiary">Wymaganym produktem prac jest:</p>
             <ul className="list-disc list-inside ml-4">
               <li>opis produktu i plan wdrożenia opisany np. w word,</li>
-              <li>prototyp (szczegóły poniżej),</li>
+              <li>
+                prototyp (Prototyp może być różny w zależności od natury
+                rozwiązania, np.: pseudokod, kod programistyczny, aplikacja,
+                biznes plan, makieta, plansza, plakat, piosenka, scenka.)
+              </li>
               <li>prezentacja.</li>
-            </ul>       
-            <p>
-              Prototyp może być różny w zależności od natury rozwiązania, np.:
-              pseudokod, kod programistyczny, aplikacja, biznes plan, makieta,
-              plansza, plakat, piosenka, scenka.
-            </p>
+            </ul>
+            <p></p>
           </div>
         </AnimatedContent>
         <AnimatedContent
@@ -187,7 +198,7 @@ export default function Harcodegram() {
             </h3>
             <p>
               Jurorzy oceniają projekty zgodnie z określonymi kryteriami.
-              <span className="text-primary">Wyniki, nagrody: Ok. 15:00.</span>
+              <span className="text-primary"> Wyniki, nagrody: Ok. 15:00.</span>
             </p>
           </div>
         </AnimatedContent>

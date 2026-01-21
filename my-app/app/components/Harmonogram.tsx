@@ -50,14 +50,14 @@ export default function Harcodegram() {
             </p>
             <h4 className="text-secondary mt-2">Warsztaty/prezentacje</h4>
             <p>
-              Na początku przewidziane są warsztaty (ok. 2h) dotyczące
+              Na początku przewidziane są warsztaty dotyczące
               zarządzania projektami, prototypowania, pracy zespołowej,
               elementów design thinking oraz mindfulness.
             </p>
             <h4 className="text-secondary mt-2">Prezentacja Problemów</h4>
             <p>
-              Ok. 3-minutowa prezentacja problemów zgłoszonych przez organizacje
-              przez Beneficjentów (ok. godz.?). Beneficjenci są dostępni na
+              Prezentacja problemów zgłoszonych przez organizacje
+              przez Beneficjentów około godziny 17:00. Beneficjenci są dostępni na
               miejscu w celu prezentacji problemów. Beneficjenci będą również
               dostępni pod telefonem w trakcie całego Hackatonu.
             </p>

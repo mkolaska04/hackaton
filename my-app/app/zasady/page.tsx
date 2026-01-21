@@ -601,7 +601,7 @@ export default function Regulamin() {
                 sprawozdania z jego przebiegu na stronach www, w powstałych
                 publikacjach oraz za pośrednictwem wszelkich pozostałych
                 mediów/kanałów dystrybucji, w kontekście
-                promocji I2I oraz sprawozdania z jego przebiegu.
+                promocji I2I oraz sprawozdania z jego przebiegu, jak również w materiałach służących promocji działalności Organizatora.
               </li>
             </ol>
           </li>

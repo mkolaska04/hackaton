@@ -23,7 +23,7 @@ export default function Home() {
   const [windowHeight, setWindowHeight] = useState<number | string>("100vh");
   const [lowPerf, setLowPerf] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const eventDate = new Date("2026-03-06T16:00:00");
+  const eventDate = new Date("2026-03-07T16:00:00");
 
   // Daty zapisów
   const registrationStartDate = new Date("2026-01-22T00:00:00");
@@ -170,7 +170,7 @@ export default function Home() {
             // className="self-end"
           >
             <h3 className="text-secondary text-lg lg:text-2xl mb-2 flex items-center gap-2 font-semibold">
-              <CalendarMonthIcon /> Kiedy? 6-7 marca
+              <CalendarMonthIcon /> Kiedy? 7-8 marca
             </h3>
           </AnimatedContent>
           <AnimatedContent
@@ -283,7 +283,7 @@ export default function Home() {
               </h3>
               <p className="text-justify">
                 Aby wziąć udział w hackathonie, studenci muszą ukończyć proces
-                rejestracji. Trwa ona od 14 do 27 marca 2026 roku. Brak
+                rejestracji. Trwa ona od 22 stycznia do 27 marca 2026 roku. Brak
                 rejestracji w oficjalnym terminie uniemożliwi uczestnictwo w
                 wydarzeniu. Wymagana jest również akceptacja regulaminu
                 wydarzenia, w tym zgoda na wykorzystanie danych i wizerunku

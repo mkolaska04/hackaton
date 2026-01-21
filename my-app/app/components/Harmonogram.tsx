@@ -46,7 +46,7 @@ export default function Harcodegram() {
             <p>
               Wyjaśnienie zasad, celów i logistyki. Organizatorzy przedstawią
               wprowadzenie do wydarzenia oraz ujawnią oficjalne wyzwania lub
-              tematy. Start: Ok. 16:00.
+              tematy. <span className="text-primary">Start: Ok. 17:00.</span>
             </p>
             <h4 className="text-secondary mt-2">Warsztaty/prezentacje</h4>
             <p>
@@ -57,7 +57,7 @@ export default function Harcodegram() {
             <h4 className="text-secondary mt-2">Prezentacja Problemów</h4>
             <p>
               Prezentacja problemów zgłoszonych przez organizacje
-              przez Beneficjentów około godziny 17:00. Beneficjenci są dostępni na
+              przez Beneficjentów. Beneficjenci są dostępni na
               miejscu w celu prezentacji problemów. Beneficjenci będą również
               dostępni pod telefonem w trakcie całego Hackatonu.
             </p>
@@ -153,8 +153,8 @@ export default function Harcodegram() {
             <h3 className="text-secondary text-lg lg:text-xl">Etap 5: Prezentacje Finałowe</h3>
             <p>
               Zespoły prezentują swoje projekty Jurorom. Prezentacje powinny
-              trwać od pięciu do dziesięciu minut. Prezentacja prac: Ok. godz.
-              13:00.
+              trwać od pięciu do dziesięciu minut.<span className="text-primary"> Prezentacja prac: Ok. godz.
+              13:00. </span>
             </p>
             <p className="mt-2 text-tertiary">Wymaganym produktem prac jest:</p>
             <ul className="list-disc list-inside ml-4">
@@ -187,7 +187,7 @@ export default function Harcodegram() {
             </h3>
             <p>
               Jurorzy oceniają projekty zgodnie z określonymi kryteriami.
-              Wyniki, nagrody: Ok. 15:00.
+              <span className="text-primary">Wyniki, nagrody: Ok. 15:00.</span>
             </p>
           </div>
         </AnimatedContent>

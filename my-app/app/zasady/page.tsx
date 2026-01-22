@@ -4,7 +4,7 @@ import Divider from "../components/Divider";
 export default function Regulamin() {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/file.pdf";
+    link.href = "/REGULAMIN_IDEA2IMPACT.pdf";
     link.download = "Regulamin_Idea2Impact.pdf";
     document.body.appendChild(link);
     link.click();
@@ -76,11 +76,13 @@ export default function Regulamin() {
               </li>
               <li>
                 Uniwersytet Gdański (ul. Jana Bażyńskiego 8, 80-309 Gdańsk, NIP
-                : 584-020-32-39, REGON 000001330, kontakt: ……………),
+                : 584-020-32-39, REGON 000001330,
+                kontakt:marta.frankowska@ug.edu.pl ),
               </li>
               <li>
                 Politechnika Gdańska (ul. Gabriela Narutowicza 11/12, 80-233
-                Gdańsk, NIP : 584-020-35-93, REGON 000001620, kontakt…………..).
+                Gdańsk, NIP : 584-020-35-93, REGON 000001620, kontakt:
+                helpdesk@pg.edu.pl).
               </li>
             </ol>
           </li>
@@ -151,6 +153,11 @@ export default function Regulamin() {
           <li>
             Uczestniku – rozumie się przez to osobę pełnoletnią, która posiada
             status studenta i dokonała zgłoszenia do Hackathonu.
+          </li>
+          <li>
+            Administratorze – rozumie się przez to Fundację Infiro z siedzibą w
+            Gdyni przy ul. Śląskiej 53/A403A, 81-304 Gdynia, nr KRS: 0001134863,
+            nr NIP: 5862411258).
           </li>
         </ol>
         <h4 className="text-2xl text-center font-inter font-semibold mt-8 lg:mt-12 mb-4 lg:px-4">
@@ -327,7 +334,7 @@ export default function Regulamin() {
             ul. Wita Stwosza 53, 80-308 Gdańsk.
           </li>
           <li>
-            Uczestnicy tworząc Projekty korzystają z własnego sprzętu,
+            nt Uczestnicy tworząc Projekty korzystają z własnego sprzętu,
             materiałów i narzędzi i ponoszą pełną odpowiedzialność za ich
             właściwe i bezpieczne użytkowanie.Organizator nie ponosi
             odpowiedzialności za szkody powstałe w związku z korzystaniem z nich
@@ -345,7 +352,7 @@ export default function Regulamin() {
           </li>
           <li>
             Organizator zapewnia Uczestnikom catering w następującym zakresie:
-            kolacja (pizza) w dniu 6 marca 2026 r., śniadanie w dniu 7 marca
+            kolacja (pizza) w dniu 7 marca 2026 r., śniadanie w dniu 8 marca
             2026 r., woda, kawa i herbata w czasie trwania I2I.
           </li>
           <li>
@@ -596,12 +603,13 @@ export default function Regulamin() {
                 promujących I2I,
               </li>
               <li>
-                rozpowszechnianie i publikację relacji z I2I w formie zdjęć lub materiału
-                audiowizualnego przez Organizatora na potrzeby promocji I2I oraz
-                sprawozdania z jego przebiegu na stronach www, w powstałych
-                publikacjach oraz za pośrednictwem wszelkich pozostałych
-                mediów/kanałów dystrybucji, w kontekście
-                promocji I2I oraz sprawozdania z jego przebiegu, jak również w materiałach służących promocji działalności Organizatora.
+                rozpowszechnianie i publikację relacji z I2I w formie zdjęć lub
+                materiału audiowizualnego przez Organizatora na potrzeby
+                promocji I2I oraz sprawozdania z jego przebiegu na stronach www,
+                w powstałych publikacjach oraz za pośrednictwem wszelkich
+                pozostałych mediów/kanałów dystrybucji, w kontekście promocji
+                I2I oraz sprawozdania z jego przebiegu, jak również w
+                materiałach służących promocji działalności Organizatora.
               </li>
             </ol>
           </li>
@@ -635,7 +643,7 @@ export default function Regulamin() {
         <ol className="list-decimal list-outside px-2 ml-4 lg:ml-8 lg:px-8 space-y-4 mb-6">
           {" "}
           <li>
-            Organizator w celu organizacji Hackathonu, współpracy przy tworzeniu
+            Fundacja Infiro w celu organizacji Hackathonu, współpracy przy tworzeniu
             Projektów, przyznania i przekazania nagród oraz publikacji
             informacji o laureatach przetwarza dane osobowe Uczestnika, wobec
             czego jest Administratorem danych osobowych Uczestnika, zgodnie z
@@ -643,14 +651,8 @@ export default function Regulamin() {
             27.04.2016 r. w sprawie ochrony osób fizycznych w związku z
             przetwarzaniem danych osobowych i w sprawie swobodnego przepływu
             takich danych oraz uchylenia dyrektywy 95/46/WE (dalej RODO) (Dz.
-            Urz. UE L 119, s. 1).
-          </li>
-          <li>
-            Z administratorem można kontaktować się:
-            <ul className="list-alpha-paren ml-8 mt-2 space-y-2">
-              <li>listownie......</li>
-              <li>przez.....</li>
-            </ul>
+            Urz. UE L 119, s. 1). Z administratorem można kontaktować się poprzez adres mailowy kontakt@infiro.pl.
+
           </li>
           <li>
             Hackathon przeznaczony jest dla osób pełnoletnich, wobec czego

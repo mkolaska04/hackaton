@@ -23,7 +23,7 @@ export default function Home() {
   const [windowHeight, setWindowHeight] = useState<number | string>("100vh");
   const [lowPerf, setLowPerf] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const eventDate = new Date("2026-03-07T16:00:00");
+  const eventDate = new Date("2026-03-07T18:00:00");
 
   // Daty zapisów
   const registrationStartDate = new Date("2026-01-22T00:00:00");

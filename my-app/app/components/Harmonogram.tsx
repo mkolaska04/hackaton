@@ -48,7 +48,7 @@ export default function Harcodegram() {
             <p>
               Wyjaśnienie zasad, celów i logistyki. Organizatorzy przedstawią
               wprowadzenie do wydarzenia oraz ujawnią oficjalne wyzwania lub
-              tematy. <span className="text-primary">Start: Ok. 17:00.</span>
+              tematy. <span className="text-primary">Start: Ok. 18:00.</span>
             </p>
             <h4 className="text-secondary mt-2">Warsztaty/prezentacje</h4>
             <p>
@@ -88,8 +88,8 @@ export default function Harcodegram() {
             </p>
             <p className="flex items-center mt-2">
               <AccessAlarmIcon />
-              Przerwy: Przewidziana jest przerwa na pizzę (ok. 21:00) oraz
-              przerwa na śniadanie (ok. 8:00).
+              Przerwy: Przewidziana jest przerwa na pizzę oraz
+              przerwa na śniadanie.
             </p>
           </div>
         </AnimatedContent>
@@ -162,10 +162,10 @@ export default function Harcodegram() {
             <p>
               Zespoły prezentują swoje projekty Jurorom. Prezentacje powinny
               trwać od pięciu do dziesięciu minut.
-              <span className="text-primary">
+              {/* <span className="text-primary">
                 {" "}
                 Prezentacja prac: Ok. godz. 13:00.{" "}
-              </span>
+              </span> */}
             </p>
             <p className="mt-2 text-tertiary">Wymaganym produktem prac jest:</p>
             <ul className="list-disc list-inside ml-4">
@@ -198,7 +198,7 @@ export default function Harcodegram() {
             </h3>
             <p>
               Jurorzy oceniają projekty zgodnie z określonymi kryteriami.
-              <span className="text-primary"> Wyniki, nagrody: Ok. 15:00.</span>
+              {/* <span className="text-primary"> Wyniki, nagrody: Ok. 15:00.</span> */}
             </p>
           </div>
         </AnimatedContent>

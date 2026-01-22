@@ -325,8 +325,8 @@ export default function Regulamin() {
           {" "}
           <li>
             Hackathon odbędzie się w terminie 7 – 8 marca 2026 r. i będzie trwał
-            24 godziny – od godziny 16:00 w dniu 7 marca 2026 r. do godziny
-            16:00 w dniu 8 marca 2026 r.
+            24 godziny – od godziny 18:00 w dniu 7 marca 2026 r. do godziny
+            18:00 w dniu 8 marca 2026 r.
           </li>
           <li>
             Hackathon odbędzie się w formie stacjonarnej, a miejscem jego

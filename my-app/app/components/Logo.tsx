@@ -37,7 +37,7 @@ export interface LogoLoopProps {
 }
 
 const ANIMATION_CONFIG = {
-  SMOOTH_TAU: 0.25,
+  SMOOTH_TAU: 0.5,
   MIN_COPIES: 3,
   COPY_HEADROOM: 3
 } as const;

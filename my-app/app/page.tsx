@@ -43,6 +43,7 @@ export default function Home() {
   { src: "pd_logo.png", alt: "Stowarzyszenie Pomorski Dom", href: "https://pomorskidom.com" },
   { src: "dns_logo.png", alt: "Stowarzyszenie Dom na Skraju", href: "https://domnaskraju.pl" },
   { src: "lg_logo.png", alt: "Fundacja L’Arche Gdynia", href: "http://larche.org.pl/gdynia/http://larche.org.pl/gdynia/" },
+  { src: "zps_logo.jpg", alt: "miasto Gdynia ZPS", href: "https://zpsgdynia.pl/" },
 ];
 
   useEffect(() => {

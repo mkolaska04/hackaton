@@ -61,7 +61,7 @@ export default function Nagrody() {
                 </div>
                 <div className="text-center space-y-2">
                   <p className="font-semibold text-lg">Brązowe medale</p>
-                  <p className="text-sm">Smartwatche</p>
+                  <p className="text-sm">Smartwatche XIAOMI Redmi</p>
                
                 </div>
               </div>

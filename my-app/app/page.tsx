@@ -13,11 +13,11 @@ import Organizatorzy from "./components/Organizatorzy";
 import Nagrody from "./components/Nagrody";
 import Kryteria from "./components/Kryteria";
 import GpsFixedIcon from "@mui/icons-material/GpsFixed";
-import HelpCenterIcon from "@mui/icons-material/HelpCenter";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
-import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver';
+import RecordVoiceOverIcon from "@mui/icons-material/RecordVoiceOver";
 import Link from "next/link";
 import Modal from "./components/Modal";
+import Image from "next/image";
 
 export default function Home() {
   const [windowHeight, setWindowHeight] = useState<number | string>("100vh");
@@ -143,10 +143,66 @@ export default function Home() {
             delay={0.3}
           >
             <div className="">
-              
               <p className="text-justify mb-4 lg:text-xl text-lg lg:mb-6">
-                <span className="font-semibold text-primary">Fundacja Infiro</span>, <span className="font-semibold text-primary">wydział MFI Uniwersytetu Gdańskiego</span>, <span className="font-semibold text-primary">wydział FTiMS Politechniki Gdańskiej</span> i <span className="font-semibold text-primary">koło naukowe Work in Progress</span> zapraszają Cię na wyjątkowe wydarzenie!
+                <span className="font-semibold text-primary">
+                  Fundacja Infiro
+                </span>
+                ,{" "}
+                <span className="font-semibold text-primary">
+                  wydział MFI Uniwersytetu Gdańskiego
+                </span>
+                ,{" "}
+                <span className="font-semibold text-primary">
+                  wydział FTiMS Politechniki Gdańskiej
+                </span>{" "}
+                i{" "}
+                <span className="font-semibold text-primary">
+                  koło naukowe Work in Progress
+                </span>{" "}
+                zapraszają Cię na wyjątkowe wydarzenie!
               </p>
+
+              <div className="hidden h-32 md:flex justify-center items-center mb-4  lg:mb-6">
+                <div className="flex items-center justify-center h-full py-2 mr-4">
+                  <Image
+                    src="/Infiro_logo.png"
+                    alt="Fundacja Infiro Logo"
+                    width={300}
+                    height={300}
+                    className="h-full w-auto object-contain"
+                  />
+                </div>
+
+                <div className="flex items-center justify-center h-full py-2">
+                  <Image
+                    src="/logo_mfi.svg"
+                    alt="Uniwersytet Gdański MFI Logo"
+                    width={300}
+                    height={300}
+                    className="h-full w-auto object-contain"
+                  />
+                </div>
+
+                <div className="flex items-center justify-center h-full py-8">
+                  <Image
+                    src="/pg-logotyp.svg"
+                    alt="Politechnika Gdańska Logotyp"
+                    width={300}
+                    height={300}
+                    className="h-full w-auto object-contain pl-8"
+                  />
+                </div>
+                <div className="flex items-center justify-center h-full py-8">
+                  <Image
+                    src="/logo_wip.png"
+                    alt="WIP Logotyp"
+                    width={300}
+                    height={300}
+                    className="h-full w-auto object-contain pl-8"
+                  />
+                </div>
+              </div>
+
               <p className="text-justify">
                 Hackathon Idea2Impact to społeczne wydarzenie, którego celem
                 jest zebranie studentów z różnych dyscyplin, aby współpracowali
@@ -201,7 +257,7 @@ export default function Home() {
               </p>
             </div>
           </AnimatedContent>
-           <AnimatedContent
+          <AnimatedContent
             distance={150}
             direction="horizontal"
             reverse={false}
@@ -283,9 +339,9 @@ export default function Home() {
               </h3>
               <p className="text-justify">
                 Aby wziąć udział w hackathonie, studenci muszą ukończyć proces
-                rejestracji. Trwa ona od 22 stycznia do 27 lutego 2026 roku. Brak
-                rejestracji w oficjalnym terminie uniemożliwi uczestnictwo w
-                wydarzeniu. Wymagana jest również akceptacja regulaminu
+                rejestracji. Trwa ona od 22 stycznia do 27 lutego 2026 roku.
+                Brak rejestracji w oficjalnym terminie uniemożliwi uczestnictwo
+                w wydarzeniu. Wymagana jest również akceptacja regulaminu
                 wydarzenia, w tym zgoda na wykorzystanie danych i wizerunku
                 uczestników w celach związanych z wydarzeniem.
               </p>

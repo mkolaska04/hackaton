@@ -278,6 +278,7 @@ export default function Home() {
                 <li className="text-justify">miasto Gdynia ZPS</li>
                 <li className="text-justify">Stowarzyszenie Pomorski Dom</li>
                 <li className="text-justify">Stowarzyszenie Dom na Skraju</li>
+                <li className="text-justify">Fundacja L’Arche Gdynia</li>
               </ul>
             </div>
           </AnimatedContent>

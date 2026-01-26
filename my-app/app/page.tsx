@@ -279,6 +279,7 @@ export default function Home() {
                 <li className="text-justify">Stowarzyszenie Pomorski Dom</li>
                 <li className="text-justify">Stowarzyszenie Dom na Skraju</li>
                 <li className="text-justify">Fundacja L’Arche Gdynia</li>
+                <li className="text-justify">Koło naukowe WIP </li>
               </ul>
             </div>
           </AnimatedContent>

@@ -38,8 +38,8 @@ export interface LogoLoopProps {
 
 const ANIMATION_CONFIG = {
   SMOOTH_TAU: 0.25,
-  MIN_COPIES: 2,
-  COPY_HEADROOM: 2
+  MIN_COPIES: 3,
+  COPY_HEADROOM: 3
 } as const;
 
 const toCssLength = (value?: number | string): string | undefined =>
@@ -170,7 +170,13 @@ const useAnimationLoop = (
 
       if (seqSize > 0) {
         let nextOffset = offsetRef.current + velocityRef.current * deltaTime;
-        nextOffset = ((nextOffset % seqSize) + seqSize) % seqSize;
+        // Ensure seamless wrapping by keeping offset within bounds more smoothly
+        while (nextOffset >= seqSize) {
+          nextOffset -= seqSize;
+        }
+        while (nextOffset < 0) {
+          nextOffset += seqSize;
+        }
         offsetRef.current = nextOffset;
 
         const transformValue = isVertical

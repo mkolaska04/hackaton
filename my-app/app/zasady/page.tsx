@@ -82,7 +82,7 @@ export default function Regulamin() {
               <li>
                 Politechnika Gdańska (ul. Gabriela Narutowicza 11/12, 80-233
                 Gdańsk, NIP : 584-020-35-93, REGON 000001620, kontakt:
-                helpdesk@pg.edu.pl).
+                magdalena.chmara@pg.edu.pl).
               </li>
             </ol>
           </li>
@@ -352,7 +352,7 @@ export default function Regulamin() {
           </li>
           <li>
             Organizator zapewnia Uczestnikom catering w następującym zakresie:
-            kolacja (pizza) w dniu 7 marca 2026 r., śniadanie w dniu 8 marca
+            kolacja w dniu 7 marca 2026 r., śniadanie w dniu 8 marca
             2026 r., woda, kawa i herbata w czasie trwania I2I.
           </li>
           <li>

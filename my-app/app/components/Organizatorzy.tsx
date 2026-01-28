@@ -17,7 +17,7 @@ export default function Organizatorzy() {
                 alt="Infiro Logo"
                 width={140}
                 height={140}
-                className="rounded-full h-full w-auto object-contain"
+                className=" h-full w-auto object-contain"
               />
             </div>
             <Link

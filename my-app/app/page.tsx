@@ -38,13 +38,39 @@ export default function Home() {
     now >= registrationStartDate && now <= registrationEndDate;
 
   const ChallLogos = [
-  { src: "Infiro_logo.png", alt: "Fundacja Infiro", href: "https://infiro.pl" },
-  { src: "logo_wip.png", alt: "Koło naukowe WIP" },
-  { src: "pd_logo.png", alt: "Stowarzyszenie Pomorski Dom", href: "https://pomorskidom.com" },
-  { src: "dns_logo.png", alt: "Stowarzyszenie Dom na Skraju", href: "https://domnaskraju.pl" },
-  { src: "lg_logo.png", alt: "Fundacja L’Arche Gdynia", href: "http://larche.org.pl/gdynia/http://larche.org.pl/gdynia/" },
-  { src: "zps_logo.jpg", alt: "miasto Gdynia ZPS", href: "https://zpsgdynia.pl/" },
-];
+    {
+      src: "Infiro_logo.png",
+      alt: "Fundacja Infiro",
+      href: "https://infiro.pl",
+    },
+    { src: "logo_wip.png", alt: "Koło naukowe WIP" },
+    {
+      src: "pd_logo.png",
+      alt: "Stowarzyszenie Pomorski Dom",
+      href: "https://pomorskidom.com",
+    },
+    {
+      src: "dns_logo.png",
+      alt: "Stowarzyszenie Dom na Skraju",
+      href: "https://domnaskraju.pl",
+    },
+      {
+      src: "Infiro_logo.png",
+      alt: "Fundacja Infiro",
+      href: "https://infiro.pl",
+    },
+    { src: "logo_wip.png", alt: "Koło naukowe WIP" },
+    {
+      src: "pd_logo.png",
+      alt: "Stowarzyszenie Pomorski Dom",
+      href: "https://pomorskidom.com",
+    },
+    {
+      src: "dns_logo.png",
+      alt: "Stowarzyszenie Dom na Skraju",
+      href: "https://domnaskraju.pl",
+    },
+  ];
 
   useEffect(() => {
     const handleResize = () => {
@@ -284,25 +310,23 @@ export default function Home() {
                 <RecordVoiceOverIcon /> Inicjatorzy wyzwań
               </h3>
               <ul className=" list-inside space-y-2">
-                <li className="text-justify">Fundacja Infiro</li>
-                <li className="text-justify">miasto Gdynia ZPS</li>
                 <li className="text-justify">Stowarzyszenie Pomorski Dom</li>
                 <li className="text-justify">Stowarzyszenie Dom na Skraju</li>
-                <li className="text-justify">Fundacja L’Arche Gdynia</li>
                 <li className="text-justify">Koło naukowe WIP </li>
+                <li className="text-justify">Fundacja Infiro</li>
               </ul>
-               <LogoLoop
-        logos={ChallLogos}
-        speed={80}
-        direction="left"
-        logoHeight={60}
-        gap={60}
-        hoverSpeed={0}
-        scaleOnHover
-        fadeOut
-        fadeOutColor="#151515"
-        ariaLabel="Inicjatorzy wyzwań"
-      />
+              <LogoLoop
+                logos={ChallLogos}
+                speed={80}
+                direction="left"
+                logoHeight={60}
+                gap={60}
+                hoverSpeed={0}
+                scaleOnHover
+                fadeOut
+                fadeOutColor="#151515"
+                ariaLabel="Inicjatorzy wyzwań"
+              />
             </div>
           </AnimatedContent>
           <div className="flex justify-center items-center text-white mt-4 text-center mx-auto ">

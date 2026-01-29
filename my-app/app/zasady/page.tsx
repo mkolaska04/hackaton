@@ -352,8 +352,8 @@ export default function Regulamin() {
           </li>
           <li>
             Organizator zapewnia Uczestnikom catering w następującym zakresie:
-            kolacja w dniu 7 marca 2026 r., śniadanie w dniu 8 marca
-            2026 r., woda, kawa i herbata w czasie trwania I2I.
+            kolacja w dniu 7 marca 2026 r., śniadanie w dniu 8 marca 2026 r.,
+            woda, kawa i herbata w czasie trwania I2I.
           </li>
           <li>
             Do każdego wyzwania lub problemu wybranego przez zespół w celu
@@ -391,9 +391,9 @@ export default function Regulamin() {
                 zgłoszonych przez Beneficjentów;
               </li>
               <li>
-                Faza Rozwoju (Development Phase) - praca zespołów nad Projektami
-                ze wsparciem Mentorów; w tej części przewidziane są dwie przerwy
-                (ok. 21:00 na kolację i ok. 8:00 na śniadanie);
+                Faza Rozwoju (Development Phase) - praca zespołów nad
+                Projektami; w tej części przewidziane są dwie przerwy (ok. 21:00
+                na kolację i ok. 8:00 na śniadanie);
               </li>
               <li>
                 Sesje Kontrolne (Check-in Sessions) - Organizator może ogłosić
@@ -643,16 +643,16 @@ export default function Regulamin() {
         <ol className="list-decimal list-outside px-2 ml-4 lg:ml-8 lg:px-8 space-y-4 mb-6">
           {" "}
           <li>
-            Fundacja Infiro w celu organizacji Hackathonu, współpracy przy tworzeniu
-            Projektów, przyznania i przekazania nagród oraz publikacji
+            Fundacja Infiro w celu organizacji Hackathonu, współpracy przy
+            tworzeniu Projektów, przyznania i przekazania nagród oraz publikacji
             informacji o laureatach przetwarza dane osobowe Uczestnika, wobec
             czego jest Administratorem danych osobowych Uczestnika, zgodnie z
             Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia
             27.04.2016 r. w sprawie ochrony osób fizycznych w związku z
             przetwarzaniem danych osobowych i w sprawie swobodnego przepływu
             takich danych oraz uchylenia dyrektywy 95/46/WE (dalej RODO) (Dz.
-            Urz. UE L 119, s. 1). Z administratorem można kontaktować się poprzez adres mailowy kontakt@infiro.pl.
-
+            Urz. UE L 119, s. 1). Z administratorem można kontaktować się
+            poprzez adres mailowy kontakt@infiro.pl.
           </li>
           <li>
             Hackathon przeznaczony jest dla osób pełnoletnich, wobec czego

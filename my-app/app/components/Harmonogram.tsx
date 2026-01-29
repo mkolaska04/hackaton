@@ -82,7 +82,7 @@ export default function Harcodegram() {
               Etap 2: Faza Rozwoju
             </h3>
             <p>
-              Intensywna praca zespołów nad projektami ze wsparciem mentorów.
+              Intensywna praca zespołów nad projektami.
               Zachęca się zespoły do iteracji pomysłów oraz rozwijania
               innowacyjnych, ale wykonalnych rozwiązań.
             </p>

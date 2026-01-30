@@ -313,8 +313,8 @@ export default function Home() {
                 <li className="text-justify">Stowarzyszenie Dom na Skraju</li>
                 <li className="text-justify">Stowarzyszenie Trzymaj Się, Kocie!</li>
                 <li className="text-justify">Koło naukowe WIP </li>
-                <li className="text-justify">Fundacja Infiro</li>,
-                <li className="text-justify">Fundacja Psia Krew</li>,
+                <li className="text-justify">Fundacja Infiro</li>
+                <li className="text-justify">Fundacja Psia Krew</li>
                 <li className="text-justify">Animal Helper</li>
               </ul>
               <LogoLoop

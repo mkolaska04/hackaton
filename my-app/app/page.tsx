@@ -50,26 +50,25 @@ export default function Home() {
       href: "https://pomorskidom.com",
     },
     {
+      src: "TSK_logo.png",
+      alt: "Stowarzyszenie Trzymaj Się, Kocie!",
+      href: "https://trzymajsiekocie.pl",
+    },
+    {
       src: "dns_logo.png",
       alt: "Stowarzyszenie Dom na Skraju",
       href: "https://domnaskraju.pl",
     },
       {
-      src: "Infiro_logo.png",
-      alt: "Fundacja Infiro",
-      href: "https://infiro.pl",
-    },
-    { src: "logo_wip.png", alt: "Koło naukowe WIP" },
-    {
-      src: "pd_logo.png",
-      alt: "Stowarzyszenie Pomorski Dom",
-      href: "https://pomorskidom.com",
-    },
-    {
-      src: "dns_logo.png",
-      alt: "Stowarzyszenie Dom na Skraju",
-      href: "https://domnaskraju.pl",
-    },
+      src: "PK_logo.png",
+      alt: "Fundacja Psia Krew",
+      href: "https://fundacjapsiakrew.pl/",
+      },
+      {
+        src:"AH_logo.png",
+        alt:"Animal Helper",
+        href:"https://www.animalhelper.pl/",
+      }
   ];
 
   useEffect(() => {
@@ -312,8 +311,11 @@ export default function Home() {
               <ul className=" list-inside space-y-2">
                 <li className="text-justify">Stowarzyszenie Pomorski Dom</li>
                 <li className="text-justify">Stowarzyszenie Dom na Skraju</li>
+                <li className="text-justify">Stowarzyszenie Trzymaj Się, Kocie!</li>
                 <li className="text-justify">Koło naukowe WIP </li>
-                <li className="text-justify">Fundacja Infiro</li>
+                <li className="text-justify">Fundacja Infiro</li>,
+                <li className="text-justify">Fundacja Psia Krew</li>,
+                <li className="text-justify">Animal Helper</li>
               </ul>
               <LogoLoop
                 logos={ChallLogos}

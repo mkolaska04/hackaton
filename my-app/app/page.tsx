@@ -32,7 +32,6 @@ export default function Home() {
   const formUrl =
     "https://docs.google.com/forms/d/e/1FAIpQLScCTLeXWdAGKHNl0AYy7nWMa6E9Syt_DUJN2kPy_9hn0nZ3fQ/viewform?usp=sharing&ouid=110319299113867414103";
 
-  // Sprawdzamy czy jesteśmy w okresie zapisów
   const now = new Date();
   const isRegistrationOpen =
     now >= registrationStartDate && now <= registrationEndDate;

@@ -49,7 +49,7 @@ export default function Home() {
       href: "https://pomorskidom.com",
     },
     {
-      src: "TSK_logo.png",
+      src: "TSK_Logo.png",
       alt: "Stowarzyszenie Trzymaj Się, Kocie!",
       href: "https://trzymajsiekocie.pl",
     },
@@ -59,12 +59,12 @@ export default function Home() {
       href: "https://domnaskraju.pl",
     },
       {
-      src: "PK_logo.png",
+      src: "PK_Logo.png",
       alt: "Fundacja Psia Krew",
       href: "https://fundacjapsiakrew.pl/",
       },
       {
-        src:"AH_logo.png",
+        src:"AH_Logo.png",
         alt:"Animal Helper",
         href:"https://www.animalhelper.pl/",
       }

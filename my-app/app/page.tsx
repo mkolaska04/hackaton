@@ -19,6 +19,7 @@ import Link from "next/link";
 import Modal from "./components/Modal";
 import Image from "next/image";
 import LogoLoop from "./components/Logo";
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
 export default function Home() {
   const [windowHeight, setWindowHeight] = useState<number | string>("100vh");
@@ -46,7 +47,7 @@ export default function Home() {
     {
       src: "pd_logo.png",
       alt: "Stowarzyszenie Pomorski Dom",
-      href: "https://pomorskidom.com",
+      href: "https://pomorskidom.com/o-nas",
     },
     {
       src: "TSK_Logo.png",
@@ -58,16 +59,16 @@ export default function Home() {
       alt: "Stowarzyszenie Dom na Skraju",
       href: "https://domnaskraju.pl",
     },
-      {
+    {
       src: "PK_Logo.png",
       alt: "Fundacja Psia Krew",
       href: "https://fundacjapsiakrew.pl/",
-      },
-      {
-        src:"AH_Logo.png",
-        alt:"Animal Helper",
-        href:"https://www.animalhelper.pl/",
-      }
+    },
+    {
+      src: "AH_Logo.png",
+      alt: "Animal Helper",
+      href: "https://www.animalhelper.pl/",
+    },
   ];
 
   useEffect(() => {
@@ -308,13 +309,88 @@ export default function Home() {
                 <RecordVoiceOverIcon /> Inicjatorzy wyzwań
               </h3>
               <ul className=" list-inside space-y-2">
-                <li className="text-justify">Stowarzyszenie Pomorski Dom</li>
-                <li className="text-justify">Stowarzyszenie Dom na Skraju</li>
-                <li className="text-justify">Stowarzyszenie Trzymaj Się, Kocie!</li>
+                <li className="text-justify hover:underline">
+                  <Link
+                    href="https://pomorskidom.com/o-nas"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Stowarzyszenie Pomorski Dom{" "}
+                    <ArrowOutwardIcon
+                      fontSize="small"
+                      className="inline-block mb-1"
+                    />
+                  </Link>
+                </li>
+                <li className="text-justify hover:underline">
+                  <Link
+                    href="https://domnaskraju.pl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Stowarzyszenie Dom na Skraju{" "}
+                    <ArrowOutwardIcon
+                      fontSize="small"
+                      className="inline-block mb-1"
+                    />
+                  </Link>
+                </li>
+                <li className="text-justify hover:underline">
+                  <Link
+                    href="https://trzymajsiekocie.pl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Stowarzyszenie Trzymaj Się, Kocie!{" "}
+                    <ArrowOutwardIcon
+                      fontSize="small"
+                      className="inline-block mb-1"
+                    />
+                  </Link>
+                </li>
+                <li className="text-justify hover:underline">
+                  <Link
+                    href="https://fundacjapsiakrew.pl/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Fundacja Psia Krew{" "}
+                    <ArrowOutwardIcon
+                      fontSize="small"
+                      className="inline-block mb-1"
+                    />
+                  </Link>
+                </li>
+
+                <li className="text-justify hover:underline">
+                  <Link
+                    href="https://www.animalhelper.pl/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Animal Helper{" "}
+                    <ArrowOutwardIcon
+                      fontSize="small"
+                      className="inline-block mb-1"
+                    />
+                  </Link>
+                </li>
+
                 <li className="text-justify">Koło naukowe WIP </li>
-                <li className="text-justify">Fundacja Infiro</li>
-                <li className="text-justify">Fundacja Psia Krew</li>
-                <li className="text-justify">Animal Helper</li>
+
+                <li className="text-justify hover:underline">
+                  <Link
+                    href="https://infiro.pl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Fundacja Infiro{" "}
+                    <ArrowOutwardIcon
+                      fontSize="small"
+                      className="inline-block mb-1"
+                    />
+                  </Link>
+                </li>
               </ul>
               <LogoLoop
                 logos={ChallLogos}

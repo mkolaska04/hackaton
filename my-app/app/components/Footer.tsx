@@ -13,17 +13,10 @@ export default function Footer() {
   const formUrl =
     "https://docs.google.com/forms/d/e/1FAIpQLScCTLeXWdAGKHNl0AYy7nWMa6E9Syt_DUJN2kPy_9hn0nZ3fQ/viewform?usp=sharing&ouid=110319299113867414103";
 
-  // Sprawdzamy czy jesteśmy w okresie zapisów
   const now = new Date();
   const isRegistrationOpen = now >= registrationStartDate && now <= registrationEndDate;
 
-  const handleRegistrationClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    const now = new Date();
-    if (now < registrationStartDate || now > registrationEndDate) {
-      e.preventDefault();
-      setIsModalOpen(true);
-    }
-  };
+
 
   return (
     <footer className="w-full p-4 bg-surface shadow-md mt-8">
@@ -40,6 +33,12 @@ export default function Footer() {
             className="text-white mx-2 text-md my-2 hover:text-secondary hover:cursor-pointer hover:cursor-pointer"
           >
             Harmonogram
+          </div>
+           <div
+            onClick={() => router.push("/inicjatorzy-wyzwan")}
+            className="text-white mx-2 text-md my-2 hover:text-secondary hover:cursor-pointer hover:cursor-pointer"
+          >
+            Inicjatorzy Wyzwań
           </div>
           {isRegistrationOpen ? (
             <Link

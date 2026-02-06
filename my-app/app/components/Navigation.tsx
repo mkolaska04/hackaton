@@ -39,7 +39,7 @@ export default function Navigation() {
 
     const observer = new IntersectionObserver(
       ([entry]) => setHeroVisible(entry.isIntersecting),
-      { threshold: 0.15 }
+      { threshold: 0.15 },
     );
 
     observer.observe(hero);
@@ -72,6 +72,13 @@ export default function Navigation() {
           >
             Harmonogram
           </div>
+
+          <div
+            onClick={() => router.push("/inicjatorzy-wyzwan")}
+             className="text-white mx-2 text-xl hover:text-secondary font-inter hover:cursor-pointer"
+          >
+            Inicjatorzy Wyzwań
+          </div>
           {isRegistrationOpen ? (
             <Link
               href={formUrl}
@@ -97,34 +104,34 @@ export default function Navigation() {
           </div>
         </div>
         <div className="md:hidden flex items-center">
-          <button 
-  onClick={toggleDrawer} 
-  className="relative w-8 h-8 flex flex-col justify-center items-center group z-50 focus:outline-none"
->
-  <span 
-    className={`block w-7 h-0.5 bg-white transition-all duration-300 ease-in-out ${
-      isDrawerOpen ? "rotate-45 translate-y-2" : "-translate-y-1"
-    }`}
-  ></span>
-  
-  <span 
-    className={`block w-7 h-0.5 bg-white transition-all duration-300 ease-in-out my-1 ${
-      isDrawerOpen ? "opacity-0" : "opacity-100"
-    }`}
-  ></span>
-  
-  <span 
-    className={`block w-7 h-0.5 bg-white transition-all duration-300 ease-in-out ${
-      isDrawerOpen ? "-rotate-45 -translate-y-1" : "translate-y-1"
-    }`}
-  ></span>
-</button>
+          <button
+            onClick={toggleDrawer}
+            className="relative w-8 h-8 flex flex-col justify-center items-center group z-50 focus:outline-none"
+          >
+            <span
+              className={`block w-7 h-0.5 bg-white transition-all duration-300 ease-in-out ${
+                isDrawerOpen ? "rotate-45 translate-y-2" : "-translate-y-1"
+              }`}
+            ></span>
+
+            <span
+              className={`block w-7 h-0.5 bg-white transition-all duration-300 ease-in-out my-1 ${
+                isDrawerOpen ? "opacity-0" : "opacity-100"
+              }`}
+            ></span>
+
+            <span
+              className={`block w-7 h-0.5 bg-white transition-all duration-300 ease-in-out ${
+                isDrawerOpen ? "-rotate-45 -translate-y-1" : "translate-y-1"
+              }`}
+            ></span>
+          </button>
           <div
             className={`absolute top-16 right-0 bg-background/90 backdrop-blur-md shadow-lg rounded-md p-4 flex flex-col transition-all duration-300 ease-in-out origin-top-right ${
               isDrawerOpen
                 ? "opacity-100 scale-100 pointer-events-auto"
                 : "opacity-0 scale-95 pointer-events-none"
-            }`} 
+            }`}
           >
             <div
               onClick={() => router.push("/")}
@@ -137,6 +144,12 @@ export default function Navigation() {
               className="text-white mx-2 text-xl my-2 hover:text-secondary hover:cursor-pointer hover:cursor-pointer"
             >
               Harmonogram
+            </div>
+            <div
+              onClick={() => router.push("/inicjatorzy-wyzwan")}
+              className="text-white mx-2 text-xl my-2 hover:text-secondary hover:cursor-pointer hover:cursor-pointer"
+            >
+              Inicjatorzy Wyzwań
             </div>
 
             {isRegistrationOpen ? (

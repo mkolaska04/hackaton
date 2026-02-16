@@ -73,12 +73,12 @@ export default function Navigation() {
             Harmonogram
           </div>
 
-          {/* <div
+          <div
             onClick={() => router.push("/inicjatorzy-wyzwan")}
              className="text-white mx-2 text-xl hover:text-secondary font-inter hover:cursor-pointer"
           >
             Inicjatorzy Wyzwań
-          </div> */}
+          </div>
           {isRegistrationOpen ? (
             <Link
               href={formUrl}
@@ -145,12 +145,12 @@ export default function Navigation() {
             >
               Harmonogram
             </div>
-            {/* <div
+            <div
               onClick={() => router.push("/inicjatorzy-wyzwan")}
               className="text-white mx-2 text-xl my-2 hover:text-secondary hover:cursor-pointer hover:cursor-pointer"
             >
               Inicjatorzy Wyzwań
-            </div> */}
+            </div>
 
             {isRegistrationOpen ? (
               <Link

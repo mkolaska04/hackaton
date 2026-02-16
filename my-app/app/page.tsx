@@ -43,7 +43,9 @@ export default function Home() {
       alt: "Fundacja Infiro",
       href: "https://infiro.pl",
     },
-    { src: "logo_wip.png", alt: "Koło naukowe WIP" },
+    { src: "logo_wip.png", 
+      alt: "Koło naukowe WIP",
+      href: "https://wip-ug.web.app/"},
     {
       src: "pd_logo.png",
       alt: "Stowarzyszenie Pomorski Dom",
@@ -376,7 +378,19 @@ export default function Home() {
                   </Link>
                 </li>
 
-                <li className="text-justify">Koło naukowe WIP </li>
+                <li className="text-justify hover:underline">
+                  <Link
+                    href="https://wip-ug.web.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Koło naukowe WIP{" "}
+                    <ArrowOutwardIcon
+                      fontSize="small"
+                      className="inline-block mb-1"
+                    />
+                  </Link>
+                </li>
 
                 <li className="text-justify hover:underline">
                   <Link

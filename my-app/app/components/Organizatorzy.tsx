@@ -96,6 +96,18 @@ export default function Organizatorzy() {
               />
             </div>
             <p className="pt-2">Koło Naukowe Work in Progress</p>
+            <Link 
+              href="https://wip-ug.web.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:text-secondary mt-2"
+            >
+              Strona
+              <ArrowOutwardIcon
+                fontSize="small"
+                className="inline-block mb-1 ml-1"
+              />
+            </Link>
           </div>
         </div>
       </section>

@@ -94,6 +94,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${sans.variable} ${code.variable} ${inter.variable}  antialiased flex flex-col`}
+        suppressHydrationWarning
       >
         <Navigation />
         {children}

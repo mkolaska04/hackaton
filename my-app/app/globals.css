@@ -14,7 +14,7 @@
   --font-mono: var(--font-geist-mono);
   
   --color-primary: #7e58fd;
-  --color-secondary: #87C4BB;
+  --color-secondary: #6fcec5;
   --color-tertiary: #F8DBD2;
   --color-accent: #746299;
   /* 0a0a0a */
@@ -61,4 +61,17 @@ body {
   content: counter(list-counter, lower-alpha) ") ";
   position: absolute;
   left: -1.5em;
+}
+
+@keyframes scroll-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.animate-scroll-bounce {
+  animation: scroll-bounce 2s ease-in-out infinite;
 }

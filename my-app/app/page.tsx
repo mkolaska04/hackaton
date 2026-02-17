@@ -25,6 +25,7 @@ export default function Home() {
   const [windowHeight, setWindowHeight] = useState<number | string>("100vh");
   const [lowPerf, setLowPerf] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+
   const eventDate = new Date("2026-03-07T18:00:00");
 
   // Daty zapisów
@@ -95,11 +96,11 @@ export default function Home() {
           width: "100%",
           height: windowHeight || "100vh",
           position: "relative",
-          backgroundColor: "#5C4D8D",
+          backgroundColor: "#4b4ba9",
         }}
       >
         <LiquidEther
-          colors={["#746299", "#87C4BB", "#FEDCD4 ", "#87C4BB", "#87C4BB"]}
+          colors={["#6866b1", "#fff", "#fadad8 ", "#fff", "#76d0c7"]}
           mouseForce={lowPerf ? 16 : 20}
           cursorSize={lowPerf ? 90 : 100}
           isViscous={lowPerf ? false : true}

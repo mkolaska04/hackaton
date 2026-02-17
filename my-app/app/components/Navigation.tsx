@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import Link from "next/dist/client/link";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -8,6 +8,7 @@ import Modal from "./Modal";
 
 export default function Navigation() {
   const router = useRouter();
+  const pathname = usePathname();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [heroVisible, setHeroVisible] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -44,7 +45,7 @@ export default function Navigation() {
 
     observer.observe(hero);
     return () => observer.disconnect();
-  }, []);
+  }, [pathname]);
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
@@ -184,6 +185,14 @@ export default function Navigation() {
         startDate="22.01.2026"
         endDate="27.02.2026"
       />
+      <div
+        className={`fixed bottom-8 left-1/2 -translate-x-1/2 z-50 animate-scroll-bounce cursor-pointer transition-opacity duration-700 ease-in-out ${heroVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+        onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })}
+      >
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+      </div>
     </nav>
   );
 }

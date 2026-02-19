@@ -44,9 +44,11 @@ export default function Home() {
       alt: "Fundacja Infiro",
       href: "https://infiro.pl",
     },
-    { src: "logo_wip.png", 
+    {
+      src: "logo_wip.png",
       alt: "Koło naukowe WIP",
-      href: "https://wip-ug.web.app/"},
+      href: "https://wip-ug.web.app/",
+    },
     {
       src: "pd_logo.png",
       alt: "Stowarzyszenie Pomorski Dom",
@@ -72,6 +74,11 @@ export default function Home() {
       alt: "Animal Helper",
       href: "https://www.animalhelper.pl/",
     },
+    {
+      src: "iokp_logo.png",
+      alt: "Instytut Ochrony Krajobrazu Pomorza",
+      href: "https://krajobrazpomorza.edu.pl/",
+    }
   ];
 
   useEffect(() => {
@@ -154,7 +161,9 @@ export default function Home() {
               Zapisz się!
             </button>
           )}
-          <p className="text-white text-md mt-4 text-center">Zapisy trwają od 22 stycznia do 27 lutego 2026 roku</p>
+          <p className="text-white text-md mt-4 text-center">
+            Zapisy trwają od 22 stycznia do 27 lutego 2026 roku
+          </p>
         </div>
       </div>
       <Modal
@@ -379,7 +388,19 @@ export default function Home() {
                     />
                   </Link>
                 </li>
-
+                <li className="text-justify hover:underline">
+                  <Link
+                    href="https://krajobrazpomorza.edu.pl/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Instytut Ochrony Krajobrazu Pomorza{" "}
+                    <ArrowOutwardIcon
+                      fontSize="small"
+                      className="inline-block mb-1"
+                    />
+                  </Link>
+                </li>
                 <li className="text-justify hover:underline">
                   <Link
                     href="https://wip-ug.web.app/"

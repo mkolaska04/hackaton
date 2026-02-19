@@ -9,7 +9,6 @@ export default function InicjatorzyWyzwanPage() {
       </h1>
       <Divider />
       <section className="w-9/10 mx-auto px-2 max-w-5xl lg:px-12 pb-12 flex flex-col gap-8 mt-6">
-
         {/* Pomorski Dom */}
         <div className="rounded-2xl border border-white/10 p-6 md:p-8 flex flex-col md:flex-row items-center gap-8 transition-colors hover:border-primary/30">
           <div className="w-40 md:w-1/4 flex-shrink-0 flex items-center justify-center">
@@ -26,14 +25,17 @@ export default function InicjatorzyWyzwanPage() {
               Stowarzyszenie Pomorski Dom
             </h3>
             <p className="text-foreground/80 text-justify leading-relaxed">
-              <span className="font-semibold">Stowarzyszenie Pomorski Dom, to organizacja zajmująca się ochroną
-              przyrody, dziedzictwa przyrodniczego i kulturowego Pomorza oraz
-              wsparciem lokalnej społeczności.</span> Swoje główne działania
-              koncentruje w Łebie i okolicach, gdyż to właśnie Łeba jest
-              siedzibą stowarzyszenia. Organizacja sprzeciwia się bezpodstawnym
-              wycinkom drzew, dąży do powoływania nowych obszarów chronionych,
-              walczy z niekontrolowaną zabudową pasa nadmorskiego oraz podejmuje
-              działania wspierające lokalne rodzinne firmy.
+              <span className="font-semibold">
+                Stowarzyszenie Pomorski Dom, to organizacja zajmująca się
+                ochroną przyrody, dziedzictwa przyrodniczego i kulturowego
+                Pomorza oraz wsparciem lokalnej społeczności.
+              </span>{" "}
+              Swoje główne działania koncentruje w Łebie i okolicach, gdyż to
+              właśnie Łeba jest siedzibą stowarzyszenia. Organizacja sprzeciwia
+              się bezpodstawnym wycinkom drzew, dąży do powoływania nowych
+              obszarów chronionych, walczy z niekontrolowaną zabudową pasa
+              nadmorskiego oraz podejmuje działania wspierające lokalne rodzinne
+              firmy.
             </p>
           </div>
         </div>
@@ -45,14 +47,19 @@ export default function InicjatorzyWyzwanPage() {
               Stowarzyszenie Dom na Skraju
             </h3>
             <p className="text-foreground/80 text-justify leading-relaxed">
-              Celem stowarzyszenia <span className="font-semibold"> &quot;Dom na Skraju&quot; </span>jest <span className="font-semibold">wspieranie, odkrywanie i
-              rozwijanie potencjału dzieci i młodzieży, </span> zwłaszcza tych
-              pochodzących z rodzin zagrożonych wykluczeniem społecznym, z
-              gdańskiej dzielnicy Nowy Port. Popołudniami w dni robocze uczymy
-              się, odrabiamy lekcje pod okiem wychowawców-wolontariuszy oraz
-              rozmawiamy przy wspólnym posiłku. W weekendy, wakacje i ferie
-              organizujemy różnorodne wyjścia i warsztaty. Działamy od ponad 30
-              lat.
+              Celem stowarzyszenia{" "}
+              <span className="font-semibold"> &quot;Dom na Skraju&quot; </span>
+              jest{" "}
+              <span className="font-semibold">
+                wspieranie, odkrywanie i rozwijanie potencjału dzieci i
+                młodzieży,{" "}
+              </span>{" "}
+              zwłaszcza tych pochodzących z rodzin zagrożonych wykluczeniem
+              społecznym, z gdańskiej dzielnicy Nowy Port. Popołudniami w dni
+              robocze uczymy się, odrabiamy lekcje pod okiem
+              wychowawców-wolontariuszy oraz rozmawiamy przy wspólnym posiłku. W
+              weekendy, wakacje i ferie organizujemy różnorodne wyjścia i
+              warsztaty. Działamy od ponad 30 lat.
             </p>
           </div>
           <div className="w-40 md:w-1/4 flex-shrink-0 flex items-center justify-center">
@@ -84,11 +91,18 @@ export default function InicjatorzyWyzwanPage() {
             <p className="text-foreground/80 text-justify leading-relaxed">
               Jesteśmy grupą osób z Trójmiasta, które nie potrafią przejść
               obojętnie obok bezdomnych kotów. Każdego dnia uczymy się, jak
-              skuteczniej im pomagać. <span className="font-semibold">Pod naszą opieką jest ok. 100 kotów, </span>
+              skuteczniej im pomagać.{" "}
+              <span className="font-semibold">
+                Pod naszą opieką jest ok. 100 kotów,{" "}
+              </span>
               głównie w domach tymczasowych, gdzie wracają do zdrowia i uczą się
               ufać ludziom. Ratujemy te najbardziej potrzebujące — chore, ranne,
               zapomniane. Działamy społecznie, po pracy, finansując wszystko z
-              darowizn. <span className="font-semibold"> Wierzymy, że każde kocie życie ma znaczenie. </span>
+              darowizn.{" "}
+              <span className="font-semibold">
+                {" "}
+                Wierzymy, że każde kocie życie ma znaczenie.{" "}
+              </span>
             </p>
           </div>
         </div>
@@ -104,10 +118,13 @@ export default function InicjatorzyWyzwanPage() {
               <li>Działająca 24/7 centrala</li>
               <li>Pierwszy w Polsce system ratunkowy dla zwierząt</li>
               <li>Pierwsze ogniwo łańcucha ratunkowego</li>
-              <li>10 województw, 22,5 tys. zgłoszeń, średnio 4 tys. połączeń miesięcznie</li>
+              <li>
+                10 województw, 22,5 tys. zgłoszeń, średnio 4 tys. połączeń
+                miesięcznie
+              </li>
             </ul>
           </div>
-          <div className="w-40 md:w-1/4 flex-shrink-0 flex flex-col items-center justify-center gap-4">
+          <div className="w-40 md:w-1/4 flex-shrink-0 flex md:flex-col items-center justify-center gap-4">
             <Image
               src="/AH_Logo.png"
               alt="Animal Helper logo"
@@ -124,18 +141,36 @@ export default function InicjatorzyWyzwanPage() {
             />
           </div>
         </div>
-
-        {/* Work in Progress */}
+        {/*Instytut Ochrony Krajobrazu Pomorza*/}
         <div className="rounded-2xl border border-white/10  p-6 md:p-8 flex flex-col md:flex-row items-center gap-8 transition-colors hover:border-primary/30">
           <div className="w-40 md:w-1/4 flex-shrink-0 flex items-center justify-center">
             <Image
-              src="/logo_wip.png"
-              alt="Koło naukowe WIP logo"
+              src="/iokp_logo.png"
+              alt="Instytut Ochrony Krajobrazu Pomorza logo"
               width={400}
               height={300}
               className="w-full max-w-[180px] object-contain"
             />
           </div>
+          <div className="flex-1">
+            <h3 className="text-xl font-semibold mb-2 text-secondary">
+              Instytut Ochrony Krajobrazu Pomorza
+            </h3>
+            <p className="text-foreground/80 text-justify leading-relaxed">
+             <span className="font-semibold">Instytut Ochrony Krajobrazu Pomorza</span> to organizacja, która skupia
+              ekspertów z zakresu <span className="font-semibold">zagospodarowania przestrzeni i ochrony
+              krajobrazu kulturowo-przyrodniczego</span>, jego badaczy i pasjonatów
+              aktywnych w negocjacjach społecznych. Instytut zrzesza osoby
+              zainteresowane<span className="font-semibold"> prowadzeniem czynnej działalności dla dobra i
+              rozwoju Pomorza </span> – obejmującego tereny województw pomorskiego,
+              kujawsko-pomorskiego i zachodniopomorskiego − oraz obszarów
+              pogranicznych regionu.
+            </p>
+          </div>
+        </div>
+
+        {/* Work in Progress */}
+        <div className="rounded-2xl border border-white/10  p-6 md:p-8 flex flex-col-reverse md:flex-row items-center gap-8 transition-colors hover:border-primary/30">
           <div className="flex-1">
             <h3 className="text-xl font-semibold mb-2 text-secondary">
               Koło naukowe Work in Progress
@@ -148,29 +183,34 @@ export default function InicjatorzyWyzwanPage() {
               </span>
             </p>
             <ul className="text-foreground/80 leading-relaxed list-disc list-inside space-y-1 mt-2">
-              <li>Prowadzenie warsztatów i szkoleń na temat programowania i tworzenia gier komputerowych</li>
-              <li>Organizacja spotkań inauguracyjnych dla studentów pierwszych roczników</li>
-              <li>Popularyzacja nauki na wydarzeniach takich jak konferencje naukowe i dni otwarte Uniwersytetu Gdańskiego</li>
+              <li>
+                Prowadzenie warsztatów i szkoleń na temat programowania i
+                tworzenia gier komputerowych
+              </li>
+              <li>
+                Organizacja spotkań inauguracyjnych dla studentów pierwszych
+                roczników
+              </li>
+              <li>
+                Popularyzacja nauki na wydarzeniach takich jak konferencje
+                naukowe i dni otwarte Uniwersytetu Gdańskiego
+              </li>
             </ul>
+          </div>
+           <div className="w-40 md:w-1/4 flex-shrink-0 flex items-center justify-center">
+            <Image
+              src="/logo_wip.png"
+              alt="Koło naukowe WIP logo"
+              width={400}
+              height={300}
+              className="w-full max-w-[180px] object-contain"
+            />
           </div>
         </div>
 
         {/* Fundacja Infiro */}
-        <div className="rounded-2xl border border-white/10  p-6 md:p-8 flex flex-col-reverse md:flex-row items-center gap-8 transition-colors hover:border-primary/30">
-          <div className="flex-1">
-            <h3 className="text-xl font-semibold mb-2 text-secondary">
-              Fundacja Infiro
-            </h3>
-            <p className="text-foreground/80 text-justify leading-relaxed mb-2">
-              <span className="font-semibold">Fundacja Infiro </span> realizuje swoje cele w trzech głównych obszarach:
-            </p>
-            <ul className="text-foreground/80 leading-relaxed list-disc list-inside space-y-1">
-              <li><span className="font-semibold">Edukacja:</span> wspieranie innowacyjnych metod nauczania, budowanie grup zainteresowań oraz popularyzacja kultury, sztuki i sportu.</li>
-              <li><span className="font-semibold">Ekspertyza:</span> rozwijanie kompetencji zawodowych i naukowych oraz wspieranie profesjonalistów w zdobywaniu specjalistycznej wiedzy.</li>
-              <li><span className="font-semibold">Dobroczynność:</span> pomoc materialna i niematerialna dla osób potrzebujących, wyrównywanie szans społecznych oraz działania na rzecz ochrony zwierząt.</li>
-            </ul>
-          </div>
-          <div className="w-40 md:w-1/4 flex-shrink-0 flex items-center justify-center">
+        <div className="rounded-2xl border border-white/10  p-6 md:p-8 flex flex-col md:flex-row items-center gap-8 transition-colors hover:border-primary/30">
+         <div className="w-40 md:w-1/4 flex-shrink-0 flex items-center justify-center">
             <Image
               src="/Infiro_Logo.png"
               alt="Fundacja Infiro logo"
@@ -179,8 +219,33 @@ export default function InicjatorzyWyzwanPage() {
               className="w-full max-w-[180px] object-contain"
             />
           </div>
+          <div className="flex-1">
+            <h3 className="text-xl font-semibold mb-2 text-secondary">
+              Fundacja Infiro
+            </h3>
+            <p className="text-foreground/80 text-justify leading-relaxed mb-2">
+              <span className="font-semibold">Fundacja Infiro </span> realizuje
+              swoje cele w trzech głównych obszarach:
+            </p>
+            <ul className="text-foreground/80 leading-relaxed list-disc list-inside space-y-1">
+              <li>
+                <span className="font-semibold">Edukacja:</span> wspieranie
+                innowacyjnych metod nauczania, budowanie grup zainteresowań oraz
+                popularyzacja kultury, sztuki i sportu.
+              </li>
+              <li>
+                <span className="font-semibold">Ekspertyza:</span> rozwijanie
+                kompetencji zawodowych i naukowych oraz wspieranie
+                profesjonalistów w zdobywaniu specjalistycznej wiedzy.
+              </li>
+              <li>
+                <span className="font-semibold">Dobroczynność:</span> pomoc
+                materialna i niematerialna dla osób potrzebujących, wyrównywanie
+                szans społecznych oraz działania na rzecz ochrony zwierząt.
+              </li>
+            </ul>
+          </div>
         </div>
-
       </section>
     </main>
   );

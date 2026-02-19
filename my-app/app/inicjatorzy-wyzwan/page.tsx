@@ -157,20 +157,70 @@ export default function InicjatorzyWyzwanPage() {
               Instytut Ochrony Krajobrazu Pomorza
             </h3>
             <p className="text-foreground/80 text-justify leading-relaxed">
-             <span className="font-semibold">Instytut Ochrony Krajobrazu Pomorza</span> to organizacja, która skupia
-              ekspertów z zakresu <span className="font-semibold">zagospodarowania przestrzeni i ochrony
-              krajobrazu kulturowo-przyrodniczego</span>, jego badaczy i pasjonatów
-              aktywnych w negocjacjach społecznych. Instytut zrzesza osoby
-              zainteresowane<span className="font-semibold"> prowadzeniem czynnej działalności dla dobra i
-              rozwoju Pomorza </span> – obejmującego tereny województw pomorskiego,
-              kujawsko-pomorskiego i zachodniopomorskiego − oraz obszarów
-              pogranicznych regionu.
+              <span className="font-semibold">
+                Instytut Ochrony Krajobrazu Pomorza
+              </span>{" "}
+              to organizacja, która skupia ekspertów z zakresu{" "}
+              <span className="font-semibold">
+                zagospodarowania przestrzeni i ochrony krajobrazu
+                kulturowo-przyrodniczego
+              </span>
+              , jego badaczy i pasjonatów aktywnych w negocjacjach społecznych.
+              Instytut zrzesza osoby zainteresowane
+              <span className="font-semibold">
+                {" "}
+                prowadzeniem czynnej działalności dla dobra i rozwoju
+                Pomorza{" "}
+              </span>{" "}
+              – obejmującego tereny województw pomorskiego, kujawsko-pomorskiego
+              i zachodniopomorskiego − oraz obszarów pogranicznych regionu.
             </p>
           </div>
         </div>
 
-        {/* Work in Progress */}
         <div className="rounded-2xl border border-white/10  p-6 md:p-8 flex flex-col-reverse md:flex-row items-center gap-8 transition-colors hover:border-primary/30">
+          <div className="flex-1">
+            <h3 className="text-xl font-semibold mb-2 text-secondary">
+              Polskie Stowarzyszenie na rzecz Osób z Niepełnosprawnością Intelektualną Koło w Gdańsku
+            </h3>
+            <p className="text-foreground/80 text-justify leading-relaxed">
+              <span className="font-semibold">Zespół Niepublicznych Placówek oświatowych PSONI Koło w Gdańsku</span>
+              obejmuje szkołę podstawową specjalną oraz szkołę przysposabiającą
+              do pracy, skierowane do dzieci i młodzieży z niepełnosprawnością
+              intelektualną. Placówki działają w Gdańsku i są prowadzone przez
+              Polskie Stowarzyszenie na rzecz Osób z Niepełnosprawnością
+              Intelektualną. <span className="font-semibold">Szkoły zapewniają bezpieczne, wspierające
+              środowisko edukacyjne, oparte na indywidualnym podejściu do
+              ucznia, małych zespołach klasowych oraz ścisłej współpracy z
+              rodzinami.</span> Edukacja łączy naukę szkolną z terapią i rozwijaniem
+              kompetencji społecznych, a na etapie szkoły przysposabiającej do
+              pracy koncentruje się także na przygotowaniu do możliwie
+              samodzielnego, dorosłego życia i aktywności zawodowych w lokalnym
+              środowisku.
+            </p>
+          </div>
+          <div className="w-40 md:w-1/4 flex-shrink-0 flex items-center justify-center">
+            <Image
+              src="/psoni-wektor.png"
+              alt="Dom na skraju logo"
+              width={400}
+              height={300}
+              className="w-full max-w-[180px] object-contain"
+            />
+          </div>
+        </div>
+
+        {/* Work in Progress */}
+        <div className="rounded-2xl border border-white/10  p-6 md:p-8 flex flex-col md:flex-row items-center gap-8 transition-colors hover:border-primary/30">
+          <div className="w-40 md:w-1/4 flex-shrink-0 flex items-center justify-center">
+            <Image
+              src="/logo_wip.png"
+              alt="Koło naukowe WIP logo"
+              width={400}
+              height={300}
+              className="w-full max-w-[180px] object-contain"
+            />
+          </div>
           <div className="flex-1">
             <h3 className="text-xl font-semibold mb-2 text-secondary">
               Koło naukowe Work in Progress
@@ -197,28 +247,10 @@ export default function InicjatorzyWyzwanPage() {
               </li>
             </ul>
           </div>
-           <div className="w-40 md:w-1/4 flex-shrink-0 flex items-center justify-center">
-            <Image
-              src="/logo_wip.png"
-              alt="Koło naukowe WIP logo"
-              width={400}
-              height={300}
-              className="w-full max-w-[180px] object-contain"
-            />
-          </div>
         </div>
 
         {/* Fundacja Infiro */}
-        <div className="rounded-2xl border border-white/10  p-6 md:p-8 flex flex-col md:flex-row items-center gap-8 transition-colors hover:border-primary/30">
-         <div className="w-40 md:w-1/4 flex-shrink-0 flex items-center justify-center">
-            <Image
-              src="/Infiro_Logo.png"
-              alt="Fundacja Infiro logo"
-              width={400}
-              height={300}
-              className="w-full max-w-[180px] object-contain"
-            />
-          </div>
+        <div className="rounded-2xl border border-white/10  p-6 md:p-8 flex flex-col-reverse md:flex-row items-center gap-8 transition-colors hover:border-primary/30">
           <div className="flex-1">
             <h3 className="text-xl font-semibold mb-2 text-secondary">
               Fundacja Infiro
@@ -244,6 +276,15 @@ export default function InicjatorzyWyzwanPage() {
                 szans społecznych oraz działania na rzecz ochrony zwierząt.
               </li>
             </ul>
+          </div>
+          <div className="w-40 md:w-1/4 flex-shrink-0 flex items-center justify-center">
+            <Image
+              src="/Infiro_Logo.png"
+              alt="Fundacja Infiro logo"
+              width={400}
+              height={300}
+              className="w-full max-w-[180px] object-contain"
+            />
           </div>
         </div>
       </section>

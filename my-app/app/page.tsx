@@ -78,6 +78,11 @@ export default function Home() {
       src: "iokp_logo.png",
       alt: "Instytut Ochrony Krajobrazu Pomorza",
       href: "https://krajobrazpomorza.edu.pl/",
+    },
+    {
+      src: "psoni-wektor.png",
+      alt: "Polskie Stowarzyszenie na rzecz Osób z Niepełnosprawnością Intelektualną Koło w Gdańsku",
+      href: "https://psoni.gda.pl/",
     }
   ];
 
@@ -395,6 +400,19 @@ export default function Home() {
                     rel="noopener noreferrer"
                   >
                     Instytut Ochrony Krajobrazu Pomorza{" "}
+                    <ArrowOutwardIcon
+                      fontSize="small"
+                      className="inline-block mb-1"
+                    />
+                  </Link>
+                </li>
+                 <li className="text-justify hover:underline">
+                  <Link
+                    href="https://psoni.gda.pl/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Polskie Stowarzyszenie na rzecz Osób z Niepełnosprawnością Intelektualną Koło w Gdańsku{" "}
                     <ArrowOutwardIcon
                       fontSize="small"
                       className="inline-block mb-1"

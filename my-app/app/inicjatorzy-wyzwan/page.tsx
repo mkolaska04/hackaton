@@ -279,7 +279,7 @@ export default function InicjatorzyWyzwanPage() {
           </div>
           <div className="w-40 md:w-1/4 flex-shrink-0 flex items-center justify-center">
             <Image
-              src="/Infiro_Logo.png"
+              src="/Infiro_logo.png"
               alt="Fundacja Infiro logo"
               width={400}
               height={300}

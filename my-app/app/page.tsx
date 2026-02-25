@@ -149,7 +149,7 @@ export default function Home() {
           </h2>
 
           <Timer eventDate={eventDate} />
-          {/* {isRegistrationOpen ? (
+          {isRegistrationOpen ? (
             <Link
               href={formUrl}
               target="_blank"
@@ -165,9 +165,9 @@ export default function Home() {
             >
               Zapisz się!
             </button>
-          )} */}
+          )}
           <p className="text-white text-md mt-4 text-center">
-            Zapisy zamknięte - osiągnęliśmy limit  miejsc! Dziękujemy za ogromne zainteresowanie.
+            Zapisy trwają od 22 stycznia do 27 lutego 2026 roku
           </p>
         </div>
       </div>

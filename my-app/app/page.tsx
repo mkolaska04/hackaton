@@ -167,7 +167,7 @@ export default function Home() {
             </button>
           )}
           <p className="text-white text-md mt-4 text-center">
-            Zapisy trwają od 22 stycznia do 27 lutego 2026 roku
+            Zapisy trwają od 22 stycznia do 27 lutego 2026 roku lub do <span className="font-bold text-secondary">wyczerpania miejsc</span>.
           </p>
         </div>
       </div>

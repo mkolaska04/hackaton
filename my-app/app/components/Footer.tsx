@@ -40,7 +40,7 @@ export default function Footer() {
           >
             Inicjatorzy Wyzwań
           </div>
-          {isRegistrationOpen ? (
+          {/* {isRegistrationOpen ? (
             <Link
               href={formUrl}
               target="_blank"
@@ -56,7 +56,7 @@ export default function Footer() {
             >
               Zapisy
             </div>
-          )}
+          )} */}
           <div
             onClick={() => router.push("/zasady")}
             className="text-white mx-2 text-md my-2 hover:text-secondary font-inter hover:cursor-pointer hover:cursor-pointer"

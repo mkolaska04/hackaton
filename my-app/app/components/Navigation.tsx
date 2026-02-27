@@ -80,7 +80,7 @@ export default function Navigation() {
           >
             Inicjatorzy Wyzwań
           </div>
-          {isRegistrationOpen ? (
+          {/* {isRegistrationOpen ? (
             <Link
               href={formUrl}
               target="_blank"
@@ -96,7 +96,7 @@ export default function Navigation() {
             >
               Zapisy
             </div>
-          )}
+          )} */}
           <div
             onClick={() => router.push("/zasady")}
             className="text-white mx-2 text-xl hover:text-secondary font-inter hover:cursor-pointer"
@@ -153,7 +153,7 @@ export default function Navigation() {
               Inicjatorzy Wyzwań
             </div>
 
-            {isRegistrationOpen ? (
+            {/* {isRegistrationOpen ? (
               <Link
                 href={formUrl}
                 target="_blank"
@@ -169,7 +169,7 @@ export default function Navigation() {
               >
                 Zapisy
               </div>
-            )}
+            )} */}
             <div
               onClick={() => router.push("/zasady")}
               className="text-white mx-2 text-xl my-2 hover:text-secondary font-inter hover:cursor-pointer hover:cursor-pointer"

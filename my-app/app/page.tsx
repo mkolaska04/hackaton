@@ -149,7 +149,7 @@ export default function Home() {
           </h2>
 
           <Timer eventDate={eventDate} />
-          {isRegistrationOpen ? (
+          {/* {isRegistrationOpen ? (
             <Link
               href={formUrl}
               target="_blank"
@@ -165,9 +165,10 @@ export default function Home() {
             >
               Zapisz się!
             </button>
-          )}
+          )} */}
           <p className="text-white text-md mt-4 text-center">
-            Zapisy trwają od 22 stycznia do 27 lutego 2026 roku lub do <span className="font-bold text-secondary">wyczerpania miejsc</span>.
+            {/* Zapisy trwają od 22 stycznia do 27 lutego 2026 roku lub do <span className="font-bold text-secondary">wyczerpania miejsc</span>. */}
+            Zapisy dobiegły końca, osiągnęliśmy limit miejsc. Dziękujemy za ogromne zainteresowanie. Do zobaczenia na hackathonie!
           </p>
         </div>
       </div>

@@ -83,6 +83,11 @@ export default function Home() {
       src: "psoni-wektor.png",
       alt: "Polskie Stowarzyszenie na rzecz Osób z Niepełnosprawnością Intelektualną Koło w Gdańsku",
       href: "https://psoni.gda.pl/",
+    },
+    {
+      src: "zps_logo.jpg",
+      alt: "Zespół Placówek Specjalistycznych w Gdyni",
+      href: "https://zpsgdynia.pl/",
     }
   ];
 
@@ -414,6 +419,19 @@ export default function Home() {
                     rel="noopener noreferrer"
                   >
                     Polskie Stowarzyszenie na rzecz Osób z Niepełnosprawnością Intelektualną Koło w Gdańsku{" "}
+                    <ArrowOutwardIcon
+                      fontSize="small"
+                      className="inline-block mb-1"
+                    />
+                  </Link>
+                </li>
+                 <li className="text-justify hover:underline">
+                  <Link
+                    href="https://zpsgdynia.pl/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Zespół Placówek Specjalistycznych w Gdyni{" "}
                     <ArrowOutwardIcon
                       fontSize="small"
                       className="inline-block mb-1"

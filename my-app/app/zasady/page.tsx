@@ -419,7 +419,7 @@ export default function Regulamin() {
               <li>
                 Prezentacje Finałowe (Final Presentations) – prezentacja
                 Projektów jurorom przez zespoły (każda prezentacja powinna trwać
-                od 5 do 10 minut);
+                maksymalnie 3 minuty);
               </li>
               <li>
                 Ocena i Ceremonia Wręczenia Nagród – ocena Projektów przez

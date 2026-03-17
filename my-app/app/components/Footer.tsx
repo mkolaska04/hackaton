@@ -29,10 +29,10 @@ export default function Footer() {
             O Wydarzeniu
           </div>
           <div
-            onClick={() => router.push("/harmonogram")}
+            onClick={() => router.push("/zwyciezcy")}
             className="text-white mx-2 text-md my-2 hover:text-secondary hover:cursor-pointer hover:cursor-pointer"
           >
-            Harmonogram
+            Zwycięzcy
           </div>
            <div
             onClick={() => router.push("/inicjatorzy-wyzwan")}

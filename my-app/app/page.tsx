@@ -149,32 +149,12 @@ export default function Home() {
           </h1>
         </section>
         <div className="flex flex-col w-fit absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <h2 className="text-3xl lg:text-4xl font-semibold text-white mb-4 mt-10 flex justify-center font-inter tracking-wide uppercase text-center">
-            Do wydarzenia zostało:
+          <h2 className="text-xl lg:text-2xl font-semibold text-white mb-4 mt-10 flex justify-center font-inter tracking-wide uppercase text-center">
+            Zajrzyjcie do sekcji "zwycięzcy" i zobaczcie, kto wygrał tę edycję!
           </h2>
-
-          <Timer eventDate={eventDate} />
-          {/* {isRegistrationOpen ? (
-            <Link
-              href={formUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8 px-6 py-3 bg-white text-primary font-semibold font-inter rounded-lg text-3xl w-fit mx-auto shadow-md transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5 hover:shadow-lg hover:bg-gray-100"
-            >
-              Zapisz się!
-            </Link>
-          ) : (
-            <button
-              onClick={() => setIsModalOpen(true)}
-              className="mt-8 px-6 py-3 bg-white text-primary font-semibold font-inter rounded-lg text-3xl w-fit mx-auto shadow-md transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5 hover:shadow-lg hover:bg-gray-100"
-            >
-              Zapisz się!
-            </button>
-          )} */}
-          <p className="text-white text-md mt-4 text-center">
-            {/* Zapisy trwają od 22 stycznia do 27 lutego 2026 roku lub do <span className="font-bold text-secondary">wyczerpania miejsc</span>. */}
-            Zapisy dobiegły końca, osiągnęliśmy limit miejsc. Dziękujemy za ogromne zainteresowanie. Do zobaczenia na hackathonie!
-          </p>
+        
+         
+       
         </div>
       </div>
       <Modal

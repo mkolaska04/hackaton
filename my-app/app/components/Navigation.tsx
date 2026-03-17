@@ -68,10 +68,10 @@ export default function Navigation() {
             O Wydarzeniu
           </div>
           <div
-            onClick={() => router.push("/harmonogram")}
+            onClick={() => router.push("/zwyciezcy")}
             className="text-white mx-2 text-xl hover:text-secondary font-inter hover:cursor-pointer"
           >
-            Harmonogram
+            Zwycięzcy
           </div>
 
           <div
@@ -141,10 +141,10 @@ export default function Navigation() {
               O Wydarzeniu
             </div>
             <div
-              onClick={() => router.push("/harmonogram")}
+              onClick={() => router.push("/zwyciezcy")}
               className="text-white mx-2 text-xl my-2 hover:text-secondary hover:cursor-pointer hover:cursor-pointer"
             >
-              Harmonogram
+              Zwycięzcy
             </div>
             <div
               onClick={() => router.push("/inicjatorzy-wyzwan")}
